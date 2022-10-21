@@ -20,7 +20,11 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>{CssBaseline.flush()}</Head>
+        <Head>
+          {CssBaseline.flush()}
+          <link rel="icon" href="/favicon.ico" sizes="any" />
+          <link rel="icon" href="/terra.svg" type="image/svg+xml" />
+        </Head>
         <body>
           <Main />
           <NextScript />

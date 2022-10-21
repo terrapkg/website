@@ -7,81 +7,100 @@ import {
   Text,
   Link,
 } from "@nextui-org/react";
+import Head from "next/head";
 import MainNavbar from "../components/MainNavbar";
 
 export default function Home() {
   return (
-    <Container
-      css={{
-        display: "flex",
-        flexDirection: "column",
-        minHeight: "100vh",
-      }}
-    >
-      <MainNavbar />
+    <>
+      <Head>
+        <title>Terra</title>
 
-      <Row
+        <meta property="og:title" content="Terra" />
+        <meta property="og:url" content="https://terra.fyralabs.com/" />
+        <meta
+          property="og:description"
+          content="A high quality repository for Fedora and other RPM-based distros, containing all the software you need."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/terra.png" />
+        <meta
+          name="description"
+          content="A high quality repository for Fedora and other RPM-based distros, containing all the software you need."
+        />
+      </Head>
+      <Container
         css={{
-          my: "auto",
-          textAlign: "center",
-          mw: "750px",
-          mx: "auto",
-          "@smMax": {
-            textAlign: "initial",
-          },
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "100vh",
         }}
       >
-        <Col
+        <MainNavbar />
+
+        <Row
           css={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "$7",
+            my: "auto",
+            textAlign: "center",
+            mw: "750px",
+            mx: "auto",
+            "@smMax": {
+              textAlign: "initial",
+            },
           }}
         >
-          <Text
-            h1
+          <Col
             css={{
-              lineHeight: "$sm",
-              margin: 0,
-              "@smMax": {
-                fontSize: "$4xl",
-              },
+              display: "flex",
+              flexDirection: "column",
+              gap: "$7",
             }}
           >
-            A modern repository for the
-            <br /> packages Fedora doesn&apos;t ship.
-          </Text>
-
-          <Text>
-            Finally, a repository for all the software you need. With Terra, you
-            can install the latest packages knowing that quality and security
-            are assured. And for project maintainers, Terra is a great way to
-            easily distribute your software to users of Fedora and RPM-based
-            distributions.
-          </Text>
-
-          <Snippet
-            css={{
-              "@sm": {
-                mx: "auto",
-              },
-              width: "min-content",
-              bg: "$accents0",
-              px: "$5",
-              py: "$3",
-            }}
-          >
-            sh &lt;(curl{" "}
-            <Link
-              css={{ display: "inline", color: "$primary" }}
-              href="https://terra.fyralabs.com/get.sh"
+            <Text
+              h1
+              css={{
+                lineHeight: "$sm",
+                margin: 0,
+                "@smMax": {
+                  fontSize: "$4xl",
+                },
+              }}
             >
-              https://terra.fyralabs.com/get.sh
-            </Link>
-            )
-          </Snippet>
-        </Col>
-      </Row>
-    </Container>
+              A modern repository for the
+              <br /> packages Fedora doesn&apos;t ship.
+            </Text>
+
+            <Text>
+              Finally, a repository for all the software you need. With Terra,
+              you can install the latest packages knowing that quality and
+              security are assured. And for project maintainers, Terra is a
+              great way to easily distribute your software to users of Fedora
+              and RPM-based distributions.
+            </Text>
+
+            <Snippet
+              css={{
+                "@sm": {
+                  mx: "auto",
+                },
+                width: "min-content",
+                bg: "$accents0",
+                px: "$5",
+                py: "$3",
+              }}
+            >
+              sh &lt;(curl{" "}
+              <Link
+                css={{ display: "inline", color: "$primary" }}
+                href="https://terra.fyralabs.com/get.sh"
+              >
+                https://terra.fyralabs.com/get.sh
+              </Link>
+              )
+            </Snippet>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }
