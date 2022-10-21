@@ -71,14 +71,14 @@ export default function Home() {
               py: "$3",
             }}
           >
-            curl{" "}
+            sh &lt;(curl{" "}
             <Link
               css={{ display: "inline", color: "$primary" }}
               href="https://terra.fyralabs.com/get.sh"
             >
               https://terra.fyralabs.com/get.sh
-            </Link>{" "}
-            | sh
+            </Link>
+            )
           </Snippet>
         </Col>
       </Row>
