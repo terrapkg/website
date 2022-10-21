@@ -15,16 +15,16 @@ const MainNavbar = () => {
         </Text>
       </Navbar.Brand>
       <Navbar.Content hideIn="xs">
-        <NextLink href="/docs">
+        {/* <NextLink href="/docs">
           <Navbar.Link>Docs</Navbar.Link>
-        </NextLink>
+        </NextLink> */}
         <Navbar.Link href="https://github.com/terrapkg/packages">
           Contribute
         </Navbar.Link>
-        <Navbar.Link href="#">Search</Navbar.Link>
+        {/* <Navbar.Link href="#">Search</Navbar.Link> */}
       </Navbar.Content>
       <Navbar.Collapse>
-        <Navbar.CollapseItem>
+        {/* <Navbar.CollapseItem>
           <NextLink href="/docs">
             <Link
               color="inherit"
@@ -35,7 +35,7 @@ const MainNavbar = () => {
               Docs
             </Link>
           </NextLink>
-        </Navbar.CollapseItem>
+        </Navbar.CollapseItem> */}
         <Navbar.CollapseItem>
           <Link
             href="https://github.com/terrapkg/packages"
@@ -47,7 +47,7 @@ const MainNavbar = () => {
             Contribute
           </Link>
         </Navbar.CollapseItem>
-        <Navbar.CollapseItem>
+        {/* <Navbar.CollapseItem>
           <Link
             href="#"
             color="inherit"
@@ -57,7 +57,7 @@ const MainNavbar = () => {
           >
             Search
           </Link>
-        </Navbar.CollapseItem>
+        </Navbar.CollapseItem> */}
       </Navbar.Collapse>
     </Navbar>
   );
