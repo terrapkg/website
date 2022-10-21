@@ -35,4 +35,4 @@ if [ ! -f /etc/fedora-release ]; then
 fi
 
 echo "Please enter your password if prompted."
-curl -s https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | sudo tee /etc/yum.repos.d/terra.repo
+curl -Ls https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | sudo tee /etc/yum.repos.d/terra.repo > /dev/null
