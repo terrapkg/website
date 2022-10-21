@@ -62,7 +62,10 @@ export default function Home() {
 
           <Snippet
             css={{
-              mx: "auto",
+              "@sm": {
+                mx: "auto",
+              },
+              width: "min-content",
               bg: "$accents0",
               px: "$5",
               py: "$3",

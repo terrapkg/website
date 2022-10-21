@@ -14,7 +14,7 @@ const MainNavbar = () => {
           Terra
         </Text>
       </Navbar.Brand>
-      <Navbar.Content hideIn="xs" enableCursorHighlight variant="highlight">
+      <Navbar.Content hideIn="xs">
         <NextLink href="/docs">
           <Navbar.Link>Docs</Navbar.Link>
         </NextLink>
