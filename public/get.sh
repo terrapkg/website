@@ -28,7 +28,7 @@ if [ "$response" != "y" ]; then
     exit 1
 fi
 
-ID=$(awk -F= '$1=="ID_LIKE" { print $2 ;}' /etc/os-release)
+ID=$(awk -F= '$1=="ID" { print $2 ;}' /etc/os-release)
 ID_LIKE=$(awk -F= '$1=="ID_LIKE" { print $2 ;}' /etc/os-release)
 
 if [ "$ID" != "fedora" ] && [ "$ID_LIKE" != "fedora" ]; then
