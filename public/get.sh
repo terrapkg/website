@@ -28,9 +28,10 @@ if [ "$response" != "y" ]; then
     exit 1
 fi
 
+ID=$(awk -F= '$1=="ID_LIKE" { print $2 ;}' /etc/os-release)
 ID_LIKE=$(awk -F= '$1=="ID_LIKE" { print $2 ;}' /etc/os-release)
 
-if [ "$ID_LIKE" != "fedora" ]; then
+if [ "$ID" != "fedora" ] && [ "$ID_LIKE" != "fedora" ]; then
     echo "Terra currently only supports Fedora (and derivatives.)"
     echo "If you would like to see support for your distribution, please open an issue at https://github.com/terrapkg/packages/issues"
     exit 1
