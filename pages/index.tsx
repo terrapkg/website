@@ -103,7 +103,7 @@ export default function Home() {
         <Spacer y={2} />
 
         <Grid.Container gap={2} justify="center">
-          <Grid xs={4}>
+          <Grid sm={4}>
             <Card>
               <Card.Header>
                 <Text b size="$xl">
@@ -120,7 +120,7 @@ export default function Home() {
               </Card.Body>
             </Card>
           </Grid>
-          <Grid xs={4}>
+          <Grid sm={4}>
             <Card>
               <Card.Header>
                 <Text b size="$xl">
@@ -137,7 +137,7 @@ export default function Home() {
               </Card.Body>
             </Card>
           </Grid>
-          <Grid xs={4}>
+          <Grid sm={4}>
             <Card>
               <Card.Header>
                 <Text b size="$xl">
@@ -154,7 +154,7 @@ export default function Home() {
               </Card.Body>
             </Card>
           </Grid>
-          <Grid xs={4}>
+          <Grid sm={4}>
             <Card>
               <Card.Header>
                 <Text b size="$xl">
@@ -172,7 +172,7 @@ export default function Home() {
               </Card.Body>
             </Card>
           </Grid>
-          <Grid xs={4}>
+          <Grid sm={4}>
             <Card>
               <Card.Header>
                 <Text b size="$xl">
@@ -189,7 +189,7 @@ export default function Home() {
               </Card.Body>
             </Card>
           </Grid>
-          <Grid xs={4}>
+          <Grid sm={4}>
             <Card>
               <Card.Header>
                 <Text b size="$xl">
