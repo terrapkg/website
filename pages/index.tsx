@@ -130,9 +130,9 @@ export default function Home() {
               <Card.Body>
                 <Text>
                   Tired of waiting for updates? Us too. Packages on Terra are
-                  automtically updated as soon as they are released upstream.
-                  And for those living on the edge, we offer nightly packages as
-                  well.
+                  automtically updated as soon as they are released upstream, on
+                  a 30 minute interval. And for those living on the edge, we
+                  offer nightly packages as well.
                 </Text>
               </Card.Body>
             </Card>
