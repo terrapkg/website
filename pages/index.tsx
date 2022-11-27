@@ -1,14 +1,37 @@
 import {
   Snippet,
-  Card,
   Col,
   Container,
   Row,
   Text,
   Link,
+  styled,
+  Button,
 } from "@nextui-org/react";
 import Head from "next/head";
 import MainNavbar from "../components/MainNavbar";
+import terraLogo from "../public/terra.svg";
+import Image from "next/image";
+import Fyra from "../public/fyra.svg";
+import UM from "../public/um.svg";
+
+const Divider = styled("hr", {
+  width: "100%",
+  height: "1px",
+  border: "none",
+  backgroundColor: "$gray200",
+  margin: "0",
+});
+
+const LogoImage = styled(Image, {
+  // filter: "grayscale(90%)",
+  opacity: 0.5,
+  "&:hover": {
+    // filter: "grayscale(0%)",
+    opacity: 1,
+  },
+  transition: "filter 0.2s ease-in-out",
+});
 
 export default function Home() {
   return (
@@ -34,16 +57,39 @@ export default function Home() {
           display: "flex",
           flexDirection: "column",
           minHeight: "100vh",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "$12",
+          maxW: 750,
         }}
       >
-        <MainNavbar />
+        {/* <MainNavbar /> */}
 
         <Row
           css={{
-            my: "auto",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Image src={terraLogo} alt="Terra Logo" width={150} />
+
+          <Text
+            css={{
+              lineHeight: "$xs",
+            }}
+            size="$8xl"
+            weight="hairline"
+          >
+            Terra
+          </Text>
+        </Row>
+
+        <Divider />
+
+        <Row
+          css={{
             textAlign: "center",
             mw: "750px",
-            mx: "auto",
             "@smMax": {
               textAlign: "initial",
             },
@@ -53,7 +99,7 @@ export default function Home() {
             css={{
               display: "flex",
               flexDirection: "column",
-              gap: "$7",
+              gap: "$9",
             }}
           >
             <Text
@@ -70,12 +116,12 @@ export default function Home() {
               <br /> packages Fedora doesn&apos;t ship.
             </Text>
 
-            <Text>
+            <Text css={{ textAlign: "center" }}>
               Finally, a repository for all the software you need. With Terra,
               you can install the latest packages knowing that quality and
-              security are assured. And for project maintainers, Terra is a
-              great way to easily distribute your software to users of Fedora
-              and RPM-based distributions.
+              security are assured. Terra is also a great way to easily
+              distribute your software to users of Fedora and RPM-based
+              distributions.
             </Text>
 
             <Snippet
@@ -89,16 +135,42 @@ export default function Home() {
                 py: "$3",
               }}
             >
-              sh &lt;(curl{" "}
+              sudo dnf config-manager --add-repo{" "}
               <Link
                 css={{ display: "inline", color: "$primary" }}
-                href="https://terra.fyralabs.com/get.sh"
+                href="htthttps://terra.fyralabs.com/terra.repo"
               >
-                https://terra.fyralabs.com/get.sh
+                https://terra.fyralabs.com/terra.repo
               </Link>
-              )
             </Snippet>
+            <Text color="warning" small>
+              Practice caution before running any commands on your system.
+            </Text>
+
+            <Button
+              css={{
+                width: "100%",
+                maxW: 300,
+                mx: "auto",
+              }}
+              as="a"
+              href="https://github.com/terrapkg/packages"
+            >
+              Contribute
+            </Button>
           </Col>
+        </Row>
+
+        <Divider />
+
+        <Row
+          css={{
+            justifyContent: "center",
+            gap: "$10",
+          }}
+        >
+          <LogoImage alt="Fyra Labs Logo" src={Fyra} width={128} />
+          <LogoImage alt="Ultramarine Linux Logo" src={UM} width={128} />
         </Row>
       </Container>
     </>

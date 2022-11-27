@@ -7,35 +7,35 @@ import terraLogo from "../public/terra.svg";
 const MainNavbar = () => {
   return (
     <Navbar variant="static" maxWidth="fluid">
-      <Navbar.Brand>
+      {/* <Navbar.Brand>
         <Navbar.Toggle aria-label="toggle navigation" showIn="xs" />
         <Image src={terraLogo} alt="Terra Logo" width={50} height={50} />
         <Text b color="inherit" hideIn="xs">
           Terra
         </Text>
-      </Navbar.Brand>
+      </Navbar.Brand> */}
       <Navbar.Content hideIn="xs">
-        {/* <NextLink href="/docs">
-          <Navbar.Link>Docs</Navbar.Link>
-        </NextLink> */}
+        {/* TODO: We need an actual docs page */}
+        <Navbar.Link href="https://github.com/terrapkg/packages/tree/main/docs">
+          Docs
+        </Navbar.Link>
         <Navbar.Link href="https://github.com/terrapkg/packages">
-          Contribute
+          Sources
         </Navbar.Link>
         {/* <Navbar.Link href="#">Search</Navbar.Link> */}
       </Navbar.Content>
       <Navbar.Collapse>
-        {/* <Navbar.CollapseItem>
-          <NextLink href="/docs">
-            <Link
-              color="inherit"
-              css={{
-                minWidth: "100%",
-              }}
-            >
-              Docs
-            </Link>
-          </NextLink>
-        </Navbar.CollapseItem> */}
+        <Navbar.CollapseItem>
+          <Link
+            href="https://github.com/terrapkg/packages/tree/main/docs"
+            color="inherit"
+            css={{
+              minWidth: "100%",
+            }}
+          >
+            Docs
+          </Link>
+        </Navbar.CollapseItem>
         <Navbar.CollapseItem>
           <Link
             href="https://github.com/terrapkg/packages"
@@ -44,7 +44,7 @@ const MainNavbar = () => {
               minWidth: "100%",
             }}
           >
-            Contribute
+            Sources
           </Link>
         </Navbar.CollapseItem>
         {/* <Navbar.CollapseItem>
