@@ -64,6 +64,7 @@ export default function Home() {
             css={{
               textAlign: "center",
             }}
+            size="$6xl"
           >
             The{" "}
             <Text
