@@ -24,13 +24,11 @@ const Divider = styled("hr", {
 });
 
 const LogoImage = styled(Image, {
-  // filter: "grayscale(90%)",
   opacity: 0.5,
   "&:hover": {
-    // filter: "grayscale(0%)",
     opacity: 1,
   },
-  transition: "filter 0.2s ease-in-out",
+  transition: "opacity 0.2s ease-in-out",
 });
 
 export default function Home() {
@@ -169,8 +167,12 @@ export default function Home() {
             gap: "$10",
           }}
         >
-          <LogoImage alt="Fyra Labs Logo" src={Fyra} width={128} />
-          <LogoImage alt="Ultramarine Linux Logo" src={UM} width={128} />
+          <a href="https://fyralabs.com">
+            <LogoImage alt="Fyra Labs Logo" src={Fyra} width={128} />
+          </a>
+          <a href="https://ultramarine-linux.org/">
+            <LogoImage alt="Ultramarine Linux Logo" src={UM} width={128} />
+          </a>
         </Row>
       </Container>
     </>
