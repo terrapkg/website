@@ -7,7 +7,7 @@ import { Inter } from "@next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 const fonts = {
-  sans: 'InterVariable, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
+  sans: `${inter.style.fontFamily}, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif`,
 };
 
 const lightTheme = createTheme({
@@ -27,11 +27,6 @@ const darkTheme = createTheme({
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
-      <style jsx global>{`
-        html {
-          font-family: ${inter.style.fontFamily};
-        }
-      `}</style>
       <ThemeProvider
         defaultTheme="system"
         attribute="class"
