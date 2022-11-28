@@ -6,6 +6,7 @@ import {
   Spacer,
   Grid,
   Card,
+  Link,
 } from "@nextui-org/react";
 import Head from "next/head";
 import MainNavbar from "../components/MainNavbar";
@@ -96,11 +97,14 @@ export default function Home() {
 
           <Container display="flex" css={{ gap: "$sm" }} justify="center">
             <Button onClick={() => setShowInstallModal(true)}>Install</Button>
-            <a href="https://github.com/terrapkg/packages">
-              <Button flat color="secondary">
-                Contribute
-              </Button>
-            </a>
+            <Button
+              flat
+              color="secondary"
+              as={Link}
+              href="https://github.com/terrapkg/packages"
+            >
+              Contribute
+            </Button>
           </Container>
         </Container>
 
