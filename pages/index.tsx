@@ -1,10 +1,6 @@
 import {
-  Snippet,
-  Col,
   Container,
-  Row,
   Text,
-  Link,
   styled,
   Button,
   Spacer,
@@ -13,10 +9,9 @@ import {
 } from "@nextui-org/react";
 import Head from "next/head";
 import MainNavbar from "../components/MainNavbar";
-import terraLogo from "../public/terra.svg";
 import Image from "next/image";
-import Fyra from "../public/fyra.svg";
-import UM from "../public/um.svg";
+import InstallModal from "../components/InstallModal";
+import { useState } from "react";
 
 const Divider = styled("hr", {
   width: "100%",
@@ -35,8 +30,14 @@ const LogoImage = styled(Image, {
 });
 
 export default function Home() {
+  const [showInstallModal, setShowInstallModal] = useState(false);
+
   return (
     <>
+      <InstallModal
+        visible={showInstallModal}
+        closeHandler={() => setShowInstallModal(false)}
+      />
       <Head>
         <title>Terra</title>
 
@@ -94,7 +95,7 @@ export default function Home() {
           <Spacer y={1} />
 
           <Container display="flex" css={{ gap: "$sm" }} justify="center">
-            <Button>Install</Button>
+            <Button onClick={() => setShowInstallModal(true)}>Install</Button>
             <Button flat color="secondary">
               Contribute
             </Button>
