@@ -96,9 +96,11 @@ export default function Home() {
 
           <Container display="flex" css={{ gap: "$sm" }} justify="center">
             <Button onClick={() => setShowInstallModal(true)}>Install</Button>
-            <Button flat color="secondary">
-              Contribute
-            </Button>
+            <a href="https://github.com/terrapkg/packages">
+              <Button flat color="secondary">
+                Contribute
+              </Button>
+            </a>
           </Container>
         </Container>
 
