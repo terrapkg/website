@@ -55,9 +55,8 @@ export default function Home() {
           content="A high quality repository for Fedora and other RPM-based distros, containing all the software you need."
         />
       </Head>
+      <MainNavbar />
       <Container>
-        <MainNavbar />
-
         <Spacer y={2} />
 
         <Container display="flex" alignItems="center" direction="column">
