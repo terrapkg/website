@@ -112,7 +112,7 @@ export default function Home() {
 
         <Grid.Container gap={2} justify="center">
           <Grid sm={4}>
-            <Card>
+            <Card variant="bordered">
               <Card.Header>
                 <Text b size="$xl">
                   Modern
@@ -129,7 +129,7 @@ export default function Home() {
             </Card>
           </Grid>
           <Grid sm={4}>
-            <Card>
+            <Card variant="bordered">
               <Card.Header>
                 <Text b size="$xl">
                   Current
@@ -146,7 +146,7 @@ export default function Home() {
             </Card>
           </Grid>
           <Grid sm={4}>
-            <Card>
+            <Card variant="bordered">
               <Card.Header>
                 <Text b size="$xl">
                   Quality
@@ -163,7 +163,7 @@ export default function Home() {
             </Card>
           </Grid>
           <Grid sm={4}>
-            <Card>
+            <Card variant="bordered">
               <Card.Header>
                 <Text b size="$xl">
                   Transparent
@@ -181,7 +181,7 @@ export default function Home() {
             </Card>
           </Grid>
           <Grid sm={4}>
-            <Card>
+            <Card variant="bordered">
               <Card.Header>
                 <Text b size="$xl">
                   Ease of Use
@@ -198,7 +198,7 @@ export default function Home() {
             </Card>
           </Grid>
           <Grid sm={4}>
-            <Card>
+            <Card variant="bordered">
               <Card.Header>
                 <Text b size="$xl">
                   Secure
