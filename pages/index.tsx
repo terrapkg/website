@@ -136,7 +136,7 @@ export default function Home() {
               sudo dnf config-manager --add-repo{" "}
               <Link
                 css={{ display: "inline", color: "$primary" }}
-                href="htthttps://terra.fyralabs.com/terra.repo"
+                href="https://terra.fyralabs.com/terra.repo"
               >
                 https://terra.fyralabs.com/terra.repo
               </Link>
