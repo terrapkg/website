@@ -23,8 +23,7 @@ const MainNavbar = () => {
           </Text>
         </Navbar.Brand>
         <Navbar.Content hideIn="xs">
-          {/* TODO: We need an actual docs page */}
-          <Navbar.Link href="https://github.com/terrapkg/packages/tree/main/docs">
+          <Navbar.Link href="https://github.com/terrapkg/packages/wiki">
             Docs
           </Navbar.Link>
           <Navbar.Link href="https://github.com/terrapkg/packages">
