@@ -100,7 +100,7 @@ export default function Home() {
               flat
               color="secondary"
               as={Link}
-              href="https://github.com/terrapkg/packages"
+              href="https://github.com/terrapkg/packages/wiki/Contribute"
             >
               Contribute
             </Button>
@@ -113,7 +113,7 @@ export default function Home() {
           <Grid sm={4}>
             <Card variant="bordered">
               <Card.Header>
-                <Text b size="$xl">
+                <Text weight="bold" size="$xl">
                   Modern
                 </Text>
               </Card.Header>
@@ -130,7 +130,7 @@ export default function Home() {
           <Grid sm={4}>
             <Card variant="bordered">
               <Card.Header>
-                <Text b size="$xl">
+                <Text weight="bold" size="$xl">
                   Current
                 </Text>
               </Card.Header>
@@ -147,7 +147,7 @@ export default function Home() {
           <Grid sm={4}>
             <Card variant="bordered">
               <Card.Header>
-                <Text b size="$xl">
+                <Text weight="bold" size="$xl">
                   Quality
                 </Text>
               </Card.Header>
@@ -164,7 +164,7 @@ export default function Home() {
           <Grid sm={4}>
             <Card variant="bordered">
               <Card.Header>
-                <Text b size="$xl">
+                <Text weight="bold" size="$xl">
                   Transparent
                 </Text>
               </Card.Header>
@@ -182,7 +182,7 @@ export default function Home() {
           <Grid sm={4}>
             <Card variant="bordered">
               <Card.Header>
-                <Text b size="$xl">
+                <Text weight="bold" size="$xl">
                   Ease of Use
                 </Text>
               </Card.Header>
@@ -199,7 +199,7 @@ export default function Home() {
           <Grid sm={4}>
             <Card variant="bordered">
               <Card.Header>
-                <Text b size="$xl">
+                <Text weight="bold" size="$xl">
                   Secure
                 </Text>
               </Card.Header>
