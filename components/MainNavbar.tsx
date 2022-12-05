@@ -18,7 +18,7 @@ const MainNavbar = () => {
         <Navbar.Brand>
           <Navbar.Toggle aria-label="toggle navigation" showIn="xs" />
           <Image src={terraLogo} alt="Terra Logo" width={50} height={50} />
-          <Text b color="inherit">
+          <Text color="inherit" weight="bold">
             Terra
           </Text>
         </Navbar.Brand>
@@ -32,9 +32,9 @@ const MainNavbar = () => {
           <Navbar.Link href="https://repology.org/repository/terra_37">
             Repology
           </Navbar.Link>
-          <Navbar.Link href="https://github.com/terrapkg/packages/tree/main/docs">
+          {/* <Navbar.Link href="https://github.com/terrapkg/packages/tree/main/docs">
             Explore
-          </Navbar.Link>
+          </Navbar.Link> */}
         </Navbar.Content>
         <Navbar.Content>
           <Navbar.Item>
@@ -77,7 +77,7 @@ const MainNavbar = () => {
               Repology
             </Link>
           </Navbar.CollapseItem>
-          <Navbar.CollapseItem>
+          {/* <Navbar.CollapseItem>
             <Link
               href="https://github.com/terrapkg/packages/tree/main/docs"
               color="inherit"
@@ -87,7 +87,7 @@ const MainNavbar = () => {
             >
               Explore
             </Link>
-          </Navbar.CollapseItem>
+          </Navbar.CollapseItem> */}
         </Navbar.Collapse>
       </Navbar>
     </>
