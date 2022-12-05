@@ -57,7 +57,7 @@ export default function Home() {
               span
             >
               {/* TODO: Pull the package count in realtime */}
-              103
+              100+
             </Text>{" "}
             packages that Fedora won&rsquo;t ship.
           </Text>

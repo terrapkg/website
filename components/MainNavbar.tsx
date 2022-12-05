@@ -46,13 +46,13 @@ const MainNavbar = () => {
         <Navbar.Collapse>
           <Navbar.CollapseItem>
             <Link
-              href="https://github.com/terrapkg/packages/tree/main/docs"
+              href="https://github.com/terrapkg/packages/wiki"
               color="inherit"
               css={{
                 minWidth: "100%",
               }}
             >
-              About
+              Docs
             </Link>
           </Navbar.CollapseItem>
           <Navbar.CollapseItem>
