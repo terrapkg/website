@@ -1,5 +1,10 @@
-import { Link, Modal, Snippet, Text } from "@nextui-org/react";
+import { Link, Modal, Snippet, styled, Text } from "@nextui-org/react";
 import { FC } from "react";
+
+const SnippetPadder = styled("div", {
+  display: "inline-block",
+  py: "$5",
+});
 
 const InstallModal: FC<{
   visible: boolean;
@@ -31,15 +36,20 @@ const InstallModal: FC<{
             width: "min-content",
             px: "$5",
             py: "$3",
+            button: {
+              alignItems: "center",
+            },
           }}
         >
-          sudo dnf config-manager --add-repo{" "}
-          <Link
-            css={{ display: "inline", color: "$primary" }}
-            href="htthttps://terra.fyralabs.com/terra.repo"
-          >
-            https://terra.fyralabs.com/terra.repo
-          </Link>
+          <SnippetPadder>
+            sudo dnf config-manager --add-repo{" "}
+            <Link
+              css={{ display: "inline", color: "$primary" }}
+              href="htthttps://terra.fyralabs.com/terra.repo"
+            >
+              https://terra.fyralabs.com/terra.repo
+            </Link>
+          </SnippetPadder>
         </Snippet>
       </Modal.Body>
       <Modal.Footer justify="center">
