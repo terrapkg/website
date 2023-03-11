@@ -59,7 +59,7 @@ export default function Home() {
               {/* TODO: Pull the package count in realtime */}
               1000+
             </Text>{" "}
-            packages that Fedora won&rsquo;t ship.
+            packages that Fedora don&rsquo;t ship.
           </Text>
           <Text
             css={{
