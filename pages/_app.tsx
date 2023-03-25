@@ -40,7 +40,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         </NextUIProvider>
       </ThemeProvider>
       <Script
-        src="https://analytics.fyralabs.com/js/script.outbound-links.js"
+        src="https://anyawytics.fyralabs.com/js/script.outbound-links.js"
         strategy="afterInteractive"
         data-domain="terra.fyralabs.com"
         defer
