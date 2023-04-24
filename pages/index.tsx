@@ -28,13 +28,13 @@ export default function Home() {
         <meta property="og:url" content="https://terra.fyralabs.com/" />
         <meta
           property="og:description"
-          content="A high quality repository for Fedora and other RPM-based distros, containing all the software you need."
+          content="A high quality repository for Fedora and its derivatives, containing all the software you need."
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/terra.png" />
         <meta
           name="description"
-          content="A high quality repository for Fedora and other RPM-based distros, containing all the software you need."
+          content="A high quality repository for Fedora and its derivatives, containing all the software you need."
         />
       </Head>
       <MainNavbar />
@@ -72,7 +72,7 @@ export default function Home() {
             A repository for all the software you need. With Terra, you can
             install the latest packages knowing that quality and security are
             assured. Terra is also a great way to distribute your software on
-            Fedora and downstream distributions.
+            Fedora and its derivatives.
           </Text>
 
           <Spacer y={1} />
