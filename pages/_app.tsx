@@ -2,7 +2,7 @@ import { ThemeProvider } from "next-themes";
 import { NextUIProvider, createTheme } from "@nextui-org/react";
 import type { AppProps } from "next/app";
 import Script from "next/script";
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 

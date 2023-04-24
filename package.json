@@ -10,7 +10,6 @@
     "export": "next export"
   },
   "dependencies": {
-    "@next/font": "^13.3.1",
     "@nextui-org/react": "1.0.0-beta.12",
     "next": "13.3.0",
     "next-themes": "^0.2.1",
