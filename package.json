@@ -10,18 +10,18 @@
     "export": "next export"
   },
   "dependencies": {
-    "@next/font": "^13.2.4",
+    "@next/font": "^13.3.1",
     "@nextui-org/react": "1.0.0-beta.12",
-    "next": "13.2.4",
+    "next": "13.3.0",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^18.15.8",
-    "@types/react": "^18.0.29",
-    "eslint": "8.36.0",
-    "eslint-config-next": "13.2.4",
-    "typescript": "^5.0.2"
+    "@types/node": "^18.16.0",
+    "@types/react": "^18.0.38",
+    "eslint": "8.39.0",
+    "eslint-config-next": "13.3.1",
+    "typescript": "^5.0.4"
   }
 }
