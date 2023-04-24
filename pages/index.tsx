@@ -72,7 +72,7 @@ export default function Home() {
             A repository for all the software you need. With Terra, you can
             install the latest packages knowing that quality and security are
             assured. Terra is also a great way to distribute your software on
-            Fedora and RPM-based distributions.
+            Fedora and downstream distributions.
           </Text>
 
           <Spacer y={1} />
