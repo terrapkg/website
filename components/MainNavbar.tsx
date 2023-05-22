@@ -23,13 +23,13 @@ const MainNavbar = () => {
           </Text>
         </Navbar.Brand>
         <Navbar.Content hideIn="xs">
-          <Navbar.Link href="https://github.com/terrapkg/packages/wiki">
+          <Navbar.Link href="https://developer.fyralabs.com/terra/">
             Docs
           </Navbar.Link>
           <Navbar.Link href="https://github.com/terrapkg/packages">
             Sources
           </Navbar.Link>
-          <Navbar.Link href="https://repology.org/repository/terra_37">
+          <Navbar.Link href="https://repology.org/repository/terra_38">
             Repology
           </Navbar.Link>
           {/* <Navbar.Link href="https://github.com/terrapkg/packages/tree/main/docs">
@@ -46,7 +46,7 @@ const MainNavbar = () => {
         <Navbar.Collapse>
           <Navbar.CollapseItem>
             <Link
-              href="https://github.com/terrapkg/packages/wiki"
+              href="https://developer.fyralabs.com/terra/"
               color="inherit"
               css={{
                 minWidth: "100%",
@@ -68,7 +68,7 @@ const MainNavbar = () => {
           </Navbar.CollapseItem>
           <Navbar.CollapseItem>
             <Link
-              href="https://repology.org/repository/terra_37"
+              href="https://repology.org/repository/terra_38"
               color="inherit"
               css={{
                 minWidth: "100%",
