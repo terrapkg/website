@@ -59,7 +59,7 @@ export default function Home() {
               {/* TODO: Pull the package count in realtime */}
               1000+
             </Text>{" "}
-            packages that Fedora don&rsquo;t ship.
+            packages Fedora doesn&rsquo;t ship.
           </Text>
           <Text
             css={{
@@ -83,7 +83,7 @@ export default function Home() {
               flat
               color="secondary"
               as={Link}
-              href="https://github.com/terrapkg/packages/wiki/Contribute"
+              href="https://developer.fyralabs.com/terra/contributing"
             >
               Contribute
             </Button>
