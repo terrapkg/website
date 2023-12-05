@@ -29,7 +29,7 @@ const MainNavbar = () => {
           <Navbar.Link href="https://github.com/terrapkg/packages">
             Sources
           </Navbar.Link>
-          <Navbar.Link href="https://repology.org/repository/terra_38">
+          <Navbar.Link href="https://repology.org/repository/terra_39">
             Repology
           </Navbar.Link>
           {/* <Navbar.Link href="https://github.com/terrapkg/packages/tree/main/docs">
@@ -68,7 +68,7 @@ const MainNavbar = () => {
           </Navbar.CollapseItem>
           <Navbar.CollapseItem>
             <Link
-              href="https://repology.org/repository/terra_38"
+              href="https://repology.org/repository/terra_39"
               color="inherit"
               css={{
                 minWidth: "100%",
