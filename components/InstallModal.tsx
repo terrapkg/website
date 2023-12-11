@@ -42,13 +42,7 @@ const InstallModal: FC<{
           }}
         >
           <SnippetPadder>
-            sudo dnf config-manager --add-repo{" "}
-            <Link
-              css={{ display: "inline", color: "$primary" }}
-              href="htthttps://terra.fyralabs.com/terra.repo"
-            >
-              https://terra.fyralabs.com/terra.repo
-            </Link>
+            sudo dnf install --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' --setopt='terra.gpgkey=https://repos.fyralabs.com/terra$releasever/key.asc' terra-release
           </SnippetPadder>
         </Snippet>
       </Modal.Body>

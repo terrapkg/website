@@ -38,4 +38,4 @@ if [ "$ID" != "fedora" ] && [ "$ID_LIKE" != "fedora" ]; then
 fi
 
 echo "Please enter your password if prompted."
-curl -Ls https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | sudo tee /etc/yum.repos.d/terra.repo > /dev/null
+sudo dnf install -y --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' --setopt='terra.gpgkey=https://repos.fyralabs.com/terra$releasever/key.asc' terra-release
