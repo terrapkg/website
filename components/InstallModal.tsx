@@ -42,7 +42,7 @@ const InstallModal: FC<{
           }}
         >
           <SnippetPadder>
-            sudo dnf install --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' --setopt='terra.gpgkey=https://repos.fyralabs.com/terra$releasever/key.asc' terra-release
+            {"sudo dnf install --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' --setopt='terra.gpgkey=https://repos.fyralabs.com/terra$releasever/key.asc' terra-release"}
           </SnippetPadder>
         </Snippet>
       </Modal.Body>
