@@ -103,7 +103,7 @@ export default function Home() {
               <Card.Body>
                 <Text>
                   Terra is built on the Andaman toolchain, our modern meta
-                  buildsystem for packages. This simpilifies the process of
+                  buildsystem for packages. This simplifies the process of
                   maintaining packages, even at a large scale. Written in Rust,
                   it is blazing fast and easy to use.
                 </Text>
@@ -120,7 +120,7 @@ export default function Home() {
               <Card.Body>
                 <Text>
                   Tired of waiting for updates? Us too. Packages on Terra are
-                  automtically updated as soon as they are released upstream, on
+                  automatically updated as soon as they are released upstream, on
                   a 30 minute interval. And for those living on the edge, we
                   offer nightly packages as well.
                 </Text>
@@ -154,9 +154,9 @@ export default function Home() {
               <Card.Body>
                 <Text>
                   Long gone are the days of external buildsystems and scattered
-                  repos. All package sources are availiable within a single
+                  repos. All package sources are available within a single
                   repository. This makes it easy to track down issues and report
-                  bugs. Additionally, all build jobs are publically viewable on
+                  bugs. Additionally, all build jobs are publicly viewable on
                   GitHub Actions.
                 </Text>
               </Card.Body>
@@ -174,7 +174,7 @@ export default function Home() {
                   For users, Terra is as easy to use as any other repository.
                   And for developers, Terra is a breeze to work with. We work
                   directly with other projects to meet their needs and make
-                  Terra as seemless as possible.
+                  Terra as seamless as possible.
                 </Text>
               </Card.Body>
             </Card>
