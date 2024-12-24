@@ -42,7 +42,7 @@ const InstallModal: FC<{
           }}
         >
           <SnippetPadder>
-            {'sudo dnf install --repofrompath "terra,https://repos.fyralabs.com/terra$(rpm -E %fedora)" --setopt="terra.gpgkey=https://repos.fyralabs.com/terra$(rpm -E %fedora)/key.asc" terra-release'}
+            {"dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release"}
           </SnippetPadder>
         </Snippet>
       </Modal.Body>

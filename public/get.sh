@@ -38,4 +38,4 @@ if [ "$ID" != "fedora" ] && [ "$ID_LIKE" != "fedora" ]; then
 fi
 
 echo "Please enter your password if prompted."
-sudo dnf install -y --repofrompath "terra,https://repos.fyralabs.com/terra$(rpm -E %fedora)" --setopt="terra.gpgkey=https://repos.fyralabs.com/terra$(rpm -E %fedora)/key.asc" terra-release
+sudo dnf install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
