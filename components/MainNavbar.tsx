@@ -32,6 +32,10 @@ const MainNavbar = () => {
           <Navbar.Link href="https://repology.org/repository/terra_rawhide">
             Repology
           </Navbar.Link>
+          <Navbar.Link href="https://fyralabs.com/discord">Discord</Navbar.Link>
+          <Navbar.Link href="https://github.com/sponsors/FyraLabs">
+            Sponsor
+          </Navbar.Link>
           {/* <Navbar.Link href="https://github.com/terrapkg/packages/tree/main/docs">
             Explore
           </Navbar.Link> */}
