@@ -15,6 +15,10 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { toast } from "sonner";
+
+const snippet =
+  "dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release";
 
 export const InstallDialog = () => {
   return (
@@ -28,11 +32,17 @@ export const InstallDialog = () => {
         <DialogHeader>
           <DialogTitle>Install Terra</DialogTitle>
           <DialogDescription>
-            Please select your distro. Don't see yours? Make a request here.
+            Copy the following command and paste it into your terminal to
+            install Terra. Practice caution before running any commands on your
+            system.
           </DialogDescription>
+          {/*<DialogDescription>
+            Please select your distro. Don't see yours? Make a request here.
+          </DialogDescription>*/}
         </DialogHeader>
 
-        <div className="flex gap-4">
+        {/* For when we have installable release packages */}
+        {/*<div className="flex gap-4">
           <Select>
             <SelectTrigger className="w-[180px]">
               <SelectValue placeholder="Distro" />
@@ -55,10 +65,23 @@ export const InstallDialog = () => {
               <SelectItem value="bazzite">41</SelectItem>
             </SelectContent>
           </Select>
+        </div>*/}
+
+        <div className="no-scrollbar overflow-x-auto bg-card text-card-foreground p-2 rounded">
+          <pre>
+            <code>{snippet}</code>
+          </pre>
         </div>
 
         <DialogFooter>
-          <Button>Install</Button>
+          <Button
+            onClick={async () => {
+              await navigator.clipboard.writeText(snippet);
+              toast.success("Copied to clipboard!");
+            }}
+          >
+            Copy
+          </Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>
