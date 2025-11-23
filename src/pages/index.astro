@@ -15,13 +15,16 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import { InstallDialog } from "@/components/InstallDialog";
+import { ButtonLink } from "@/components/ButtonLink";
 ---
 
 <MainLayout title="Terra">
     <Navbar client:load />
     <div class="flex flex-col gap-6 items-center p-16">
-        <h1 class="mx-auto text-center max-w-4xl text-7xl font-bold">
-            The <AuroraText
+        <h1
+            class="mx-auto text-center max-w-4xl text-4xl md:text-5xl lg:text-7xl font-bold"
+        >
+            The <AuroraText className="-z-10"
                 ><NumberTicker
                     value={3000}
                     startValue={1000}
@@ -29,131 +32,83 @@ import { InstallDialog } from "@/components/InstallDialog";
                 />+</AuroraText
             > packages Fedora doesn't ship.
         </h1>
-        <p class="mx-auto max-w-4xl text-center text-xl text-neutral-300">
+        <p class="mx-auto max-w-4xl text-center md:text-xl text-neutral-300">
             The missing community repository for Fedora that's easy to use and
             contribute to.
         </p>
         <div class="grid grid-flow-col auto-cols-fr mt-4 gap-2">
-            <InstallDialog client:load>
-                <div slot="meow">
-                    <Button size="lg">Install</Button>
-                </div>
-            </InstallDialog>
-            <Button size="lg">Contribute</Button>
+            <InstallDialog client:load />
+            <ButtonLink
+                href="https://developer.fyralabs.com/terra/contributing"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="h-full">Contribute</ButtonLink
+            >
         </div>
     </div>
-
-    <!-- <div>Bento Box</div> -->
-
-    <div class="grid gap-6 grid-cols-3 container mx-auto">
-        <Card>
-            <CardHeader>
-                <CardTitle>Modern</CardTitle>
-                <CardDescription
-                    >Terra is built on the Andaman toolchain, our modern meta
-                    buildsystem for packages. This simplifies the process of
-                    maintaining packages, even at a large scale. Written in
-                    Rust, it is blazing fast and easy to use.
-                </CardDescription>
-                <!-- <CardAction>Card Action</CardAction> -->
-            </CardHeader>
-            <!-- <CardContent>
-                <p>Card Content</p>
-            </CardContent>
-            <CardFooter>
-                <p>Card Footer</p>
-            </CardFooter> -->
-        </Card>
-        <Card>
-            <CardHeader>
-                <CardTitle>Current</CardTitle>
-                <CardDescription
-                    >Tired of waiting for updates? Us too. Packages on Terra are
-                    automatically updated as soon as they are released upstream,
-                    on a 30 minute interval. And for those living on the edge,
-                    we offer nightly packages as well.
-                </CardDescription>
-                <!-- <CardAction>Card Action</CardAction> -->
-            </CardHeader>
-            <!-- <CardContent>
-                <p>Card Content</p>
-            </CardContent>
-            <CardFooter>
-                <p>Card Footer</p>
-            </CardFooter> -->
-        </Card>
-        <Card>
-            <CardHeader>
-                <CardTitle>Quality</CardTitle>
-                <CardDescription
-                    >Packages on Terra are built by a team of experienced
-                    maintainers. Additionally, package submissions are carefully
-                    vetted and assessed against our guidelines. This ensures
-                    that a high quality of packages is maintained.
-                </CardDescription>
-                <!-- <CardAction>Card Action</CardAction> -->
-            </CardHeader>
-            <!-- <CardContent>
-                <p>Card Content</p>
-            </CardContent>
-            <CardFooter>
-                <p>Card Footer</p>
-            </CardFooter> -->
-        </Card>
-        <Card>
-            <CardHeader>
-                <CardTitle>Transparent</CardTitle>
-                <CardDescription
-                    >Long gone are the days of external buildsystems and
-                    scattered repos. All package sources are available within a
-                    single repository. This makes it easy to track down issues
-                    and report bugs. Additionally, all build jobs are publicly
-                    viewable on GitHub Actions.
-                </CardDescription>
-                <!-- <CardAction>Card Action</CardAction> -->
-            </CardHeader>
-            <!-- <CardContent>
-                <p>Card Content</p>
-            </CardContent>
-            <CardFooter>
-                <p>Card Footer</p>
-            </CardFooter> -->
-        </Card>
-        <Card>
-            <CardHeader>
-                <CardTitle>Ease of Use</CardTitle>
-                <CardDescription
-                    >For users, Terra is as easy to use as any other repository.
-                    And for developers, Terra is a breeze to work with. We work
-                    directly with other projects to meet their needs and make
-                    Terra as seamless as possible.
-                </CardDescription>
-                <!-- <CardAction>Card Action</CardAction> -->
-            </CardHeader>
-            <!-- <CardContent>
-                <p>Card Content</p>
-            </CardContent>
-            <CardFooter>
-                <p>Card Footer</p>
-            </CardFooter> -->
-        </Card>
-        <Card>
-            <CardHeader>
-                <CardTitle>Secure</CardTitle>
-                <CardDescription
-                    >All packages on Terra are built in a secure environment
-                    maintained by the Fyra Labs team. Through our modern
-                    tooling, transparent infrastructure, and careful review
-                    process, we ensure that all packages are safe to use.
-                </CardDescription>
-                <!-- <CardAction>Card Action</CardAction> -->
-            </CardHeader>
-            <!-- <CardContent>
-                <p>Card Content</p>
-            </CardContent>
-            <CardFooter>
-                <p>Card Footer</p>
-            </CardFooter> -->
-        </Card>
-    </div>
 </MainLayout>
+
+<div class="grid gap-6 lg:grid-cols-3 container mx-auto">
+    <Card>
+        <CardHeader>
+            <CardTitle>Modern</CardTitle>
+            <CardDescription
+                >Terra is built on the Andaman toolchain, our modern, Rust-based
+                meta buildsystem for packages. This simplifies the process of
+                maintenance at scale.
+            </CardDescription>
+        </CardHeader>
+    </Card>
+    <Card>
+        <CardHeader>
+            <CardTitle>Current</CardTitle>
+            <CardDescription
+                >Tired of waiting for updates? Us too. Packages are
+                automatically updated as soon as released upstream. And, for
+                those living on the edge, we offer nightly packages as well.
+            </CardDescription>
+        </CardHeader>
+    </Card>
+    <Card>
+        <CardHeader>
+            <CardTitle>Quality</CardTitle>
+            <CardDescription
+                >Package submissions are carefully vetted and assessed against
+                our guidelines. This ensures that a high quality of packages is
+                maintained.
+            </CardDescription>
+        </CardHeader>
+    </Card>
+    <Card>
+        <CardHeader>
+            <CardTitle>Transparent</CardTitle>
+            <CardDescription
+                >Goodbye to external buildsystems and scattered repos! Package
+                sources are available in a monorepo, and build jobs are publicly
+                viewable on GitHub Actions. This makes it easy to debug issues.
+            </CardDescription>
+        </CardHeader>
+    </Card>
+    <Card>
+        <CardHeader>
+            <CardTitle>Ease of Use</CardTitle>
+            <CardDescription
+                >Terra is as easy to use as any other repository. For
+                developers, Terra is a breeze to work with. We work directly
+                with other projects to meet their needs and make Terra as
+                seamless as possible.
+            </CardDescription>
+        </CardHeader>
+    </Card>
+    <Card>
+        <CardHeader>
+            <CardTitle>Secure</CardTitle>
+            <CardDescription
+                >Packages are built in a secure environment maintained by the
+                Fyra Labs team. Through our modern tooling, transparent
+                infrastructure, and careful review process, we can prevent
+                issues from occurring.
+            </CardDescription>
+        </CardHeader>
+    </Card>
+</div>

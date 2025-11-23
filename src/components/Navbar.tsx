@@ -32,6 +32,14 @@ import {
 } from "@/components/ui/input-group";
 import { Kbd } from "@/components/ui/kbd";
 import Terra from "@/components/terra.svg?react";
+import Discord from "~icons/simple-icons/discord";
+import GitHub from "~icons/simple-icons/github";
+import Twitter from "~icons/simple-icons/twitter";
+import Mastodon from "~icons/simple-icons/mastodon";
+import Bluesky from "~icons/simple-icons/bluesky";
+import GitHubSponsors from "~icons/simple-icons/githubsponsors";
+import Kofi from "~icons/simple-icons/kofi";
+import Liberapay from "~icons/simple-icons/liberapay";
 
 export const Navbar = () => {
   return (
@@ -44,14 +52,32 @@ export const Navbar = () => {
       <NavigationMenu viewport={false}>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Docs
+            <NavigationMenuLink
+              className={navigationMenuTriggerStyle()}
+              asChild
+            >
+              <a
+                href="https://developer.fyralabs.com/terra"
+                target="_blank"
+                rel="noopener"
+              >
+                Docs
+              </a>
             </NavigationMenuLink>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Sources
+            <NavigationMenuLink
+              className={navigationMenuTriggerStyle()}
+              asChild
+            >
+              <a
+                href="https://github.com/terrapkg/packages"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Sources
+              </a>
             </NavigationMenuLink>
           </NavigationMenuItem>
 
@@ -60,9 +86,61 @@ export const Navbar = () => {
             <NavigationMenuContent>
               <ul className="grid w-[200px] gap-4">
                 <li>
-                  <NavigationMenuLink>Discord</NavigationMenuLink>
-                  <NavigationMenuLink>GitHub</NavigationMenuLink>
-                  <NavigationMenuLink>Mastodon</NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <a
+                      className="flex flex-row items-center gap-2"
+                      href="https://fyralabs.com/discord"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Discord />
+                      Discord
+                    </a>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <a
+                      className="flex flex-row items-center gap-2"
+                      href="https://github.com/terrapkg/packages"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <GitHub />
+                      GitHub
+                    </a>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <a
+                      className="flex flex-row items-center gap-2"
+                      href="https://bsky.app/profile/fyralabs.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Bluesky />
+                      Bluesky
+                    </a>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <a
+                      className="flex flex-row items-center gap-2"
+                      href="https://fedi.fyralabs.com/@hq"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Mastodon />
+                      Mastodon
+                    </a>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <a
+                      className="flex flex-row items-center gap-2"
+                      href="https://twitter.com/teamfyralabs"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Twitter />
+                      Twitter
+                    </a>
+                  </NavigationMenuLink>
                 </li>
               </ul>
             </NavigationMenuContent>
@@ -73,9 +151,39 @@ export const Navbar = () => {
             <NavigationMenuContent>
               <ul className="grid w-[200px] gap-4">
                 <li>
-                  <NavigationMenuLink>GitHub Sponsors</NavigationMenuLink>
-                  <NavigationMenuLink>Ko-fi</NavigationMenuLink>
-                  <NavigationMenuLink>LiberaPay</NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <a
+                      className="flex flex-row items-center gap-2"
+                      href="https://github.com/sponsors/fyralabs"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <GitHubSponsors />
+                      GitHub Sponsors
+                    </a>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <a
+                      className="flex flex-row items-center gap-2"
+                      href="https://ko-fi.com/fyralabs"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Kofi />
+                      Ko-fi
+                    </a>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <a
+                      className="flex flex-row items-center gap-2"
+                      href="https://liberapay.com/fyra"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Liberapay />
+                      Liberapay
+                    </a>
+                  </NavigationMenuLink>
                 </li>
               </ul>
             </NavigationMenuContent>
@@ -84,14 +192,14 @@ export const Navbar = () => {
       </NavigationMenu>
 
       <div className="gap-6 grow basis-0">
-        <InputGroup className="max-w-2xs ml-auto">
+        {/*<InputGroup className="max-w-2xs ml-auto">
           <InputGroupInput placeholder="Search..." />
-          <InputGroupAddon>{/*<SearchIcon />*/}</InputGroupAddon>
+          <InputGroupAddon></InputGroupAddon>
           <InputGroupAddon align="inline-end">
             <Kbd>⌘</Kbd>
             <Kbd>K</Kbd>
           </InputGroupAddon>
-        </InputGroup>
+        </InputGroup>*/}
       </div>
     </div>
   );

@@ -16,10 +16,14 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-export const InstallDialog = ({ meos }) => {
+export const InstallDialog = () => {
   return (
     <Dialog>
-      <DialogTrigger>{meow}</DialogTrigger>
+      <DialogTrigger>
+        <Button size="lg" className="cursor-pointer">
+          Install
+        </Button>
+      </DialogTrigger>
       <DialogContent>
         <DialogHeader>
           <DialogTitle>Install Terra</DialogTitle>
@@ -37,7 +41,7 @@ export const InstallDialog = ({ meos }) => {
               <SelectItem value="light">Fedora</SelectItem>
               <SelectItem value="dark">Enterprise Linux</SelectItem>
               <SelectItem value="um">Ultramarine</SelectItem>
-              <SelectItem value="bazzite">Bazzite/ublue</SelectItem>
+              <SelectItem value="bazzite">Bazzite/Universial Blue</SelectItem>
             </SelectContent>
           </Select>
           <Select>
