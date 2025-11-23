@@ -23,10 +23,5 @@ export default defineConfig({
     ],
   },
 
-  integrations: [
-    sitemap(),
-    react({
-      experimentalReactChildren: true,
-    }),
-  ],
+  integrations: [sitemap(), react()],
 });

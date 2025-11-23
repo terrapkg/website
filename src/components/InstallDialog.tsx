@@ -19,7 +19,7 @@ import {
 export const InstallDialog = () => {
   return (
     <Dialog>
-      <DialogTrigger>
+      <DialogTrigger asChild>
         <Button size="lg" className="cursor-pointer">
           Install
         </Button>
