@@ -74,6 +74,15 @@ export const InstallDialog = () => {
         </div>
 
         <DialogFooter>
+          <Button variant="link">
+            <a
+              href="https://github.com/terrapkg/packages"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Star on GitHub
+            </a>
+          </Button>
           <Button
             onClick={async () => {
               await navigator.clipboard.writeText(snippet);
