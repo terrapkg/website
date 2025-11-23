@@ -1,25 +1,159 @@
 ---
-import '../styles/global.css';
-// Component Imports
-import Button from '../components/Button.astro';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+import "../styles/global.css";
+import MainLayout from "@/layouts/main.astro";
+import { AuroraText } from "@/components/ui/aurora-text";
+import { Button } from "@/components/ui/button";
+import { Navbar } from "@/components/Navbar";
+import { NumberTicker } from "@/components/ui/number-ticker";
+import {
+    Card,
+    CardAction,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card";
+import { InstallDialog } from "@/components/InstallDialog";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
+<MainLayout title="Terra">
+    <Navbar client:load />
+    <div class="flex flex-col gap-6 items-center p-16">
+        <h1 class="mx-auto text-center max-w-4xl text-7xl font-bold">
+            The <AuroraText
+                ><NumberTicker
+                    value={3000}
+                    startValue={1000}
+                    client:load
+                />+</AuroraText
+            > packages Fedora doesn't ship.
+        </h1>
+        <p class="mx-auto max-w-4xl text-center text-xl text-neutral-300">
+            The missing community repository for Fedora that's easy to use and
+            contribute to.
+        </p>
+        <div class="grid grid-flow-col auto-cols-fr mt-4 gap-2">
+            <InstallDialog client:load>
+                <div slot="meow">
+                    <Button size="lg">Install</Button>
+                </div>
+            </InstallDialog>
+            <Button size="lg">Contribute</Button>
+        </div>
+    </div>
 
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
-	</body>
-</html>
+    <!-- <div>Bento Box</div> -->
+
+    <div class="grid gap-6 grid-cols-3 container mx-auto">
+        <Card>
+            <CardHeader>
+                <CardTitle>Modern</CardTitle>
+                <CardDescription
+                    >Terra is built on the Andaman toolchain, our modern meta
+                    buildsystem for packages. This simplifies the process of
+                    maintaining packages, even at a large scale. Written in
+                    Rust, it is blazing fast and easy to use.
+                </CardDescription>
+                <!-- <CardAction>Card Action</CardAction> -->
+            </CardHeader>
+            <!-- <CardContent>
+                <p>Card Content</p>
+            </CardContent>
+            <CardFooter>
+                <p>Card Footer</p>
+            </CardFooter> -->
+        </Card>
+        <Card>
+            <CardHeader>
+                <CardTitle>Current</CardTitle>
+                <CardDescription
+                    >Tired of waiting for updates? Us too. Packages on Terra are
+                    automatically updated as soon as they are released upstream,
+                    on a 30 minute interval. And for those living on the edge,
+                    we offer nightly packages as well.
+                </CardDescription>
+                <!-- <CardAction>Card Action</CardAction> -->
+            </CardHeader>
+            <!-- <CardContent>
+                <p>Card Content</p>
+            </CardContent>
+            <CardFooter>
+                <p>Card Footer</p>
+            </CardFooter> -->
+        </Card>
+        <Card>
+            <CardHeader>
+                <CardTitle>Quality</CardTitle>
+                <CardDescription
+                    >Packages on Terra are built by a team of experienced
+                    maintainers. Additionally, package submissions are carefully
+                    vetted and assessed against our guidelines. This ensures
+                    that a high quality of packages is maintained.
+                </CardDescription>
+                <!-- <CardAction>Card Action</CardAction> -->
+            </CardHeader>
+            <!-- <CardContent>
+                <p>Card Content</p>
+            </CardContent>
+            <CardFooter>
+                <p>Card Footer</p>
+            </CardFooter> -->
+        </Card>
+        <Card>
+            <CardHeader>
+                <CardTitle>Transparent</CardTitle>
+                <CardDescription
+                    >Long gone are the days of external buildsystems and
+                    scattered repos. All package sources are available within a
+                    single repository. This makes it easy to track down issues
+                    and report bugs. Additionally, all build jobs are publicly
+                    viewable on GitHub Actions.
+                </CardDescription>
+                <!-- <CardAction>Card Action</CardAction> -->
+            </CardHeader>
+            <!-- <CardContent>
+                <p>Card Content</p>
+            </CardContent>
+            <CardFooter>
+                <p>Card Footer</p>
+            </CardFooter> -->
+        </Card>
+        <Card>
+            <CardHeader>
+                <CardTitle>Ease of Use</CardTitle>
+                <CardDescription
+                    >For users, Terra is as easy to use as any other repository.
+                    And for developers, Terra is a breeze to work with. We work
+                    directly with other projects to meet their needs and make
+                    Terra as seamless as possible.
+                </CardDescription>
+                <!-- <CardAction>Card Action</CardAction> -->
+            </CardHeader>
+            <!-- <CardContent>
+                <p>Card Content</p>
+            </CardContent>
+            <CardFooter>
+                <p>Card Footer</p>
+            </CardFooter> -->
+        </Card>
+        <Card>
+            <CardHeader>
+                <CardTitle>Secure</CardTitle>
+                <CardDescription
+                    >All packages on Terra are built in a secure environment
+                    maintained by the Fyra Labs team. Through our modern
+                    tooling, transparent infrastructure, and careful review
+                    process, we ensure that all packages are safe to use.
+                </CardDescription>
+                <!-- <CardAction>Card Action</CardAction> -->
+            </CardHeader>
+            <!-- <CardContent>
+                <p>Card Content</p>
+            </CardContent>
+            <CardFooter>
+                <p>Card Footer</p>
+            </CardFooter> -->
+        </Card>
+    </div>
+</MainLayout>
