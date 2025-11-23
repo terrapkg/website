@@ -51,11 +51,7 @@ export function NumberTicker({
   );
 
   return (
-    <span
-      ref={ref}
-      className={cn("inline-block tabular-nums", className)}
-      {...props}
-    >
+    <span ref={ref} className={cn("tabular-nums", className)} {...props}>
       {startValue}
     </span>
   );
