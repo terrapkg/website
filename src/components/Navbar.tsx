@@ -216,9 +216,11 @@ export const Navbar = () => {
           </SheetContent>
         </Sheet>
       ) : (
-        nav
+        <>
+          {nav}
+          <div className="grow basis-0" />
+        </>
       )}
-
       {/* <div className="gap-6 grow basis-0"> */}
       {/*<InputGroup className="max-w-2xs ml-auto">
           <InputGroupInput placeholder="Search..." />
