@@ -34,7 +34,7 @@ export const InstallDialog = () => {
           <DialogDescription>
             Copy the following command and paste it into your terminal to
             install Terra. Practice caution before running any commands on your
-            system.
+            system. Also, while you're at it, maybe star the project ;3
           </DialogDescription>
           {/*<DialogDescription>
             Please select your distro. Don't see yours? Make a request here.
