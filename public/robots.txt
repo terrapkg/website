@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://terra.fyralabs.com/sitemap-index.xml
+Sitemap: https://terrapkg.com/sitemap-index.xml
