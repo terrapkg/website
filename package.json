@@ -34,7 +34,7 @@
     "tailwind-merge": "^3.5.0",
     "tailwindcss": "^4.2.2",
     "vaul": "^1.1.2",
-    "vite-plugin-svgr": "^5.0.0"
+    "vite-plugin-svgr": "^5.2.0"
   },
   "devDependencies": {
     "@iconify/json": "^2.2.462",
