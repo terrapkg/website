@@ -4,3 +4,18 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      astro:
+        patterns: ["astro", "@astrojs*"]
+      canvas-confetti:
+        patterns: ["canvas-confetti", "@types/canvas-confetti"]
+      radix-ui:
+        patterns: ["@radix-ui*"]
+      react:
+        patterns: ["react", "react-dom", "@types/react", "@types/react-dom"]
+      tailwindcss:
+        patterns: ["tailwindcss", "@tailwindcss"]
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
