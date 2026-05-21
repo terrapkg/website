@@ -60,7 +60,7 @@ export const Navbar = () => {
         <NavigationMenuItem>
           <NavigationMenuLink className={navigationMenuTriggerStyle()} asChild>
             <a
-              href="https://developer.fyralabs.com/terra"
+              href="https://docs.terrapkg.com"
               target="_blank"
               rel="noopener"
             >
