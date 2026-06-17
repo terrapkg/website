@@ -33,7 +33,7 @@
         "vite-plugin-svgr": "^5.2.0",
       },
       "devDependencies": {
-        "@iconify/json": "^2.2.482",
+        "@iconify/json": "^2.2.487",
         "tw-animate-css": "^1.4.0",
         "unplugin-icons": "^23.0.1",
       },
@@ -164,7 +164,7 @@
 
     "@floating-ui/utils": ["@floating-ui/utils@0.2.10", "", {}, "sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ=="],
 
-    "@iconify/json": ["@iconify/json@2.2.482", "", { "dependencies": { "@iconify/types": "*", "pathe": "^2.0.3" } }, "sha512-U6tOIrJKIN012Ea2XClJzcD9IsTN3vhd2uaA29bsnYgQR0pi0WBUjczyI8LvfLa8JQu/yng6mS/jwyhmILh8MQ=="],
+    "@iconify/json": ["@iconify/json@2.2.487", "", { "dependencies": { "@iconify/types": "*", "pathe": "^2.0.3" } }, "sha512-tcsAA/F7CKdRT8CHOCaH1vv3FL0l8PgdzMh3FhVS5yCzAp9lxWqUh05kHnjACTcISHCEkpupY3/UpVWTmPruzg=="],
 
     "@iconify/types": ["@iconify/types@2.0.0", "", {}, "sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg=="],
 
