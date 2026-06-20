@@ -6,6 +6,8 @@ import Icons from "unplugin-icons/vite";
 import sitemap from "@astrojs/sitemap";
 import { defineConfig } from "astro/config";
 
+import astro_i18nya from "astro-i18nya";
+import i18nya from "./src/i18n";
 import react from "@astrojs/react";
 
 // https://astro.build/config
@@ -23,5 +25,5 @@ export default defineConfig({
     ],
   },
 
-  integrations: [sitemap(), react()],
+  integrations: [sitemap(), react(), astro_i18nya(i18nya)],
 });

@@ -41,6 +41,7 @@ import {
 } from "@/components/ui/input-group";
 import { Kbd } from "@/components/ui/kbd";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
+import { makeT } from "@/i18n";
 import Terra from "@/components/terra.svg?react";
 import Discord from "~icons/simple-icons/discord";
 import GitHub from "~icons/simple-icons/github";
@@ -52,7 +53,8 @@ import Kofi from "~icons/simple-icons/kofi";
 import Liberapay from "~icons/simple-icons/liberapay";
 import Menu from "~icons/lucide/menu";
 
-export const Navbar = () => {
+export const Navbar = ({ lang }: { lang?: string }) => {
+  const t = makeT(lang);
   const isMobile = useMediaQuery("not (width >= 48rem)");
   const nav = (
     <NavigationMenu viewport={isMobile}>
@@ -64,7 +66,7 @@ export const Navbar = () => {
               target="_blank"
               rel="noopener"
             >
-              Docs
+              {t("docs")}
             </a>
           </NavigationMenuLink>
         </NavigationMenuItem>
@@ -76,13 +78,13 @@ export const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Sources
+              {t("sources")}
             </a>
           </NavigationMenuLink>
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Community</NavigationMenuTrigger>
+          <NavigationMenuTrigger>{t("community")}</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[200px] gap-4">
               <li>
@@ -94,7 +96,7 @@ export const Navbar = () => {
                     rel="noopener noreferrer"
                   >
                     <Discord />
-                    Discord
+                    {t("discord")}
                   </a>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
@@ -105,7 +107,7 @@ export const Navbar = () => {
                     rel="noopener noreferrer"
                   >
                     <GitHub />
-                    GitHub
+                    {t("github")}
                   </a>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
@@ -116,7 +118,7 @@ export const Navbar = () => {
                     rel="noopener noreferrer"
                   >
                     <Bluesky />
-                    Bluesky
+                    {t("bluesky")}
                   </a>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
@@ -127,7 +129,7 @@ export const Navbar = () => {
                     rel="noopener noreferrer"
                   >
                     <Mastodon />
-                    Mastodon
+                    {t("mastodon")}
                   </a>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
@@ -138,7 +140,7 @@ export const Navbar = () => {
                     rel="noopener noreferrer"
                   >
                     <Twitter />
-                    Twitter
+                    {t("twitter")}
                   </a>
                 </NavigationMenuLink>
               </li>
@@ -147,7 +149,7 @@ export const Navbar = () => {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Sponsor</NavigationMenuTrigger>
+          <NavigationMenuTrigger>{t("sponsor")}</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[200px] gap-4">
               <li>
@@ -159,7 +161,7 @@ export const Navbar = () => {
                     rel="noopener noreferrer"
                   >
                     <GitHubSponsors />
-                    GitHub Sponsors
+                    {t("github_sponsors")}
                   </a>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
@@ -170,7 +172,7 @@ export const Navbar = () => {
                     rel="noopener noreferrer"
                   >
                     <Kofi />
-                    Ko-fi
+                    {t("kofi")}
                   </a>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
@@ -181,7 +183,7 @@ export const Navbar = () => {
                     rel="noopener noreferrer"
                   >
                     <Liberapay />
-                    Liberapay
+                    {t("liberapay")}
                   </a>
                 </NavigationMenuLink>
               </li>
@@ -209,7 +211,7 @@ export const Navbar = () => {
           <SheetContent>
             <VisuallyHidden>
               <SheetHeader>
-                <SheetTitle>Navigation</SheetTitle>
+                <SheetTitle>{t("navigation")}</SheetTitle>
               </SheetHeader>
             </VisuallyHidden>
             <div className="p-2">{nav}</div>
