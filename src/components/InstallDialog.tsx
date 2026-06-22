@@ -16,26 +16,24 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { toast } from "sonner";
+import { makeT } from "@/i18n";
 
 const snippet =
   "dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release";
 
-export const InstallDialog = () => {
+export const InstallDialog = ({ lang }: { lang?: string }) => {
+  const t = makeT(lang);
   return (
     <Dialog>
       <DialogTrigger asChild>
         <Button size="lg" className="cursor-pointer">
-          Install
+          {t("install")}
         </Button>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Install Terra</DialogTitle>
-          <DialogDescription>
-            Copy the following command and paste it into your terminal to
-            install Terra. Practice caution before running any commands on your
-            system. Also, while you're at it, maybe star the project ;3
-          </DialogDescription>
+          <DialogTitle>{t("install_terra")}</DialogTitle>
+          <DialogDescription>{t("install_desc")}</DialogDescription>
           {/*<DialogDescription>
             Please select your distro. Don't see yours? Make a request here.
           </DialogDescription>*/}
@@ -80,16 +78,16 @@ export const InstallDialog = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Star on GitHub
+              {t("star_on_github")}
             </a>
           </Button>
           <Button
             onClick={async () => {
               await navigator.clipboard.writeText(snippet);
-              toast.success("Copied to clipboard!");
+              toast.success(t("copied"));
             }}
           >
-            Copy
+            {t("copy")}
           </Button>
         </DialogFooter>
       </DialogContent>
