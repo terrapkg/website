@@ -1,1 +1,11 @@
-{}
+{
+    "h1.the": " ",
+    "h1": " 個Fedora沒有的軟體套件。",
+    "desc": "為Fedora而設、盼望已久的社群軟體儲存庫，容易使用，歡迎貢獻。",
+    "contribute": "貢獻",
+    "install": "安裝",
+    "install_terra": "安裝Terra",
+    "install_desc": "複製下列命令至命令列介面，以安裝Terra。執行任何命令前請保持謹慎。另外不如順便幫我們按個讚吧 ;3",
+    "sponsor": "贊助",
+    "navigation": "指南"
+}
