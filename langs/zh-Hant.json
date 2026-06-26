@@ -7,5 +7,18 @@
     "install_terra": "安裝Terra",
     "install_desc": "複製下列命令至命令列介面，以安裝Terra。執行任何命令前請保持謹慎。另外不如順便幫我們按個讚吧 ;3",
     "sponsor": "贊助",
-    "navigation": "指南"
+    "navigation": "指南",
+    "current": "最新",
+    "current_desc": "等更新等到累吧？我們都累啊。當上流公開新版本，軟體包會被自動更新。我們亦為喜歡嘗試嶄新事物的使用者，提供nightly版本的軟體包。",
+    "quality": "高質",
+    "modern": "嶄新",
+    "modern_desc": "Terra以Andaman工具鏈為基礎。Andaman是我們自家發明、嶄新而基於Rust的軟體包建構系統，大規模簡化了維護程序。",
+    "quality_desc": "軟體包須通過我們仔細的監測準則才被准許批發，以確保軟體包是高質素的。",
+    "transparent": "公開",
+    "transparent_desc": "對第三方疏落的建構平台說掰掰！所有軟體包的原碼都位於同一個原碼庫，而建構過程被公開於GitHub Actions，令問題都變得更容易解決。",
+    "ease_of_use": "方便",
+    "ease_of_use_desc": "Terra跟其他軟體庫一樣方便使用；而對開發者而言，為Terra貢獻更是易如反掌。我們直接與其他方案及項目共同合作，滿足各界需求，令Terra「無為而治」。",
+    "secure": "安全",
+    "secure_desc": "軟體包於Fyra Labs維護的安全環境下製造。透過我們嶄新的工具、公開透明的平台、仔細的審查過程，我們避免問題發生。",
+    "site_desc": "Terra是一個社群Fedora軟體庫，令您輕鬆安裝及維護軟體包。"
 }
