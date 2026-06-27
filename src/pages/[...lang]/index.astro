@@ -24,7 +24,7 @@ const t = makeT(Astro.params.lang);
 ---
 
 <MainLayout title="Terra" lang={Astro.params.lang}>
-    <Navbar lang={Astro.params.lang} client:only />
+    <Navbar lang={Astro.params.lang} client:load />
     <div class="flex flex-col gap-6 items-center p-16">
         <h1
             class="mx-auto text-center max-w-4xl text-4xl md:text-5xl lg:text-7xl font-bold"
