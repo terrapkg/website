@@ -41,7 +41,7 @@ import {
 } from "@/components/ui/input-group";
 import { Kbd } from "@/components/ui/kbd";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
-import { makeT } from "@/i18n";
+import i18nya, { makeT } from "@/i18n";
 import Terra from "@/components/terra.svg?react";
 import Discord from "~icons/simple-icons/discord";
 import GitHub from "~icons/simple-icons/github";
@@ -52,6 +52,7 @@ import GitHubSponsors from "~icons/simple-icons/githubsponsors";
 import Kofi from "~icons/simple-icons/kofi";
 import Liberapay from "~icons/simple-icons/liberapay";
 import Menu from "~icons/lucide/menu";
+import { LanguagePicker } from "./LanguagePicker";
 
 export const Navbar = ({ lang }: { lang?: string }) => {
   const t = makeT(lang);
@@ -223,6 +224,11 @@ export const Navbar = ({ lang }: { lang?: string }) => {
           <div className="grow basis-0" />
         </>
       )}
+
+      <span className="px-2">
+        <LanguagePicker currentLang={lang ?? i18nya.config.defaultLang} />
+      </span>
+
       {/* <div className="gap-6 grow basis-0"> */}
       {/*<InputGroup className="max-w-2xs ml-auto">
           <InputGroupInput placeholder="Search..." />
