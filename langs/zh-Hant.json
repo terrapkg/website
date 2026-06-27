@@ -20,5 +20,19 @@
     "ease_of_use_desc": "Terra跟其他軟體庫一樣方便使用；而對開發者而言，為Terra貢獻更是易如反掌。我們直接與其他方案及項目共同合作，滿足各界需求，令Terra「無為而治」。",
     "secure": "安全",
     "secure_desc": "軟體包於Fyra Labs維護的安全環境下製造。透過我們嶄新的工具、公開透明的平台、仔細的審查過程，我們避免問題發生。",
-    "site_desc": "Terra是一個社群Fedora軟體庫，令您輕鬆安裝及維護軟體包。"
+    "site_desc": "Terra是一個社群Fedora軟體庫，令您輕鬆安裝及維護軟體包。",
+    "star_on_github": "在GitHub給個讚",
+    "copy": "複製",
+    "copied": "已複製！",
+    "docs": "文檔",
+    "sources": "原碼",
+    "community": "社群",
+    "discord": "Discord",
+    "github": "GitHub",
+    "bluesky": "Bluesky",
+    "mastodon": "萬象",
+    "twitter": "推特",
+    "kofi": "Ko-fi",
+    "liberapay": "Liberapay",
+    "github_sponsors": "GitHub贊助"
 }
