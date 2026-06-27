@@ -1,10 +1,10 @@
 import {
   NavigationMenu,
-  NavigationMenuList,
-  NavigationMenuTrigger,
   NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Button } from "./ui/button";
@@ -36,12 +36,12 @@ import {
 import { Input } from "@/components/ui/input";
 import {
   InputGroup,
-  InputGroupInput,
   InputGroupAddon,
+  InputGroupInput,
 } from "@/components/ui/input-group";
 import { Kbd } from "@/components/ui/kbd";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
-import { makeT } from "@/i18n";
+import i18nya, { makeT } from "@/i18n";
 import Terra from "@/components/terra.svg?react";
 import Discord from "~icons/simple-icons/discord";
 import GitHub from "~icons/simple-icons/github";
@@ -52,6 +52,7 @@ import GitHubSponsors from "~icons/simple-icons/githubsponsors";
 import Kofi from "~icons/simple-icons/kofi";
 import Liberapay from "~icons/simple-icons/liberapay";
 import Menu from "~icons/lucide/menu";
+import { LanguagePicker } from "./LanguagePicker";
 
 export const Navbar = ({ lang }: { lang?: string }) => {
   const t = makeT(lang);
@@ -201,37 +202,46 @@ export const Navbar = ({ lang }: { lang?: string }) => {
         <span className="text-lg font-semibold">Terra</span>
       </div>
 
-      {isMobile ? (
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button variant="outline" size="icon">
-              <Menu />
-            </Button>
-          </SheetTrigger>
-          <SheetContent>
-            <VisuallyHidden>
-              <SheetHeader>
-                <SheetTitle>{t("navigation")}</SheetTitle>
-              </SheetHeader>
-            </VisuallyHidden>
-            <div className="p-2">{nav}</div>
-          </SheetContent>
-        </Sheet>
-      ) : (
-        <>
-          {nav}
-          <div className="grow basis-0" />
-        </>
-      )}
+      {isMobile
+        ? (
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="outline" size="icon">
+                <Menu />
+              </Button>
+            </SheetTrigger>
+            <SheetContent>
+              <VisuallyHidden>
+                <SheetHeader>
+                  <SheetTitle>{t("navigation")}</SheetTitle>
+                </SheetHeader>
+              </VisuallyHidden>
+              <div className="p-2">{nav}</div>
+            </SheetContent>
+          </Sheet>
+        )
+        : (
+          <>
+            {nav}
+            <div className="grow basis-0" />
+          </>
+        )}
+
+      <span className="px-2">
+        <LanguagePicker currentLang={lang ?? i18nya.config.defaultLang} />
+      </span>
+
       {/* <div className="gap-6 grow basis-0"> */}
-      {/*<InputGroup className="max-w-2xs ml-auto">
+      {
+        /*<InputGroup className="max-w-2xs ml-auto">
           <InputGroupInput placeholder="Search..." />
           <InputGroupAddon></InputGroupAddon>
           <InputGroupAddon align="inline-end">
             <Kbd>⌘</Kbd>
             <Kbd>K</Kbd>
           </InputGroupAddon>
-        </InputGroup>*/}
+        </InputGroup>*/
+      }
       {/*</div>*/}
     </div>
   );
