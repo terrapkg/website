@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "check": "astro check",
     "astro": "astro"
   },
   "dependencies": {
@@ -36,7 +37,10 @@
     "vite-plugin-svgr": "^5.2.0"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@axe-core/playwright": "^4.12.1",
     "@iconify/json": "^2.2.489",
+    "@playwright/test": "^1.61.1",
     "@types/canvas-confetti": "^1.9.0",
     "@types/node": "^26.0.1",
     "@types/react": "^19.2.17",
