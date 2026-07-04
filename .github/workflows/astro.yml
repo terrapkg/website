@@ -10,6 +10,7 @@ permissions:
 env:
   ASTRO_TELEMETRY_DISABLED: true
   ASTRO_DISABLE_UPDATE_CHECK: true
+  FORCE_COLOR: 1
 
 jobs:
   build:
