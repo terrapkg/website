@@ -1,0 +1,63 @@
+---
+interface Distro {
+  name: string;
+  description: string;
+  icon: string;
+}
+
+const distros: Distro[] = [
+  {
+    name: "Ultramarine",
+    description: "A Fedora-based distribution that uses Terra for a broader package selection and smoother upgrades.",
+    icon: "/distros/ultramarine-transp.svg",
+  },
+  {
+    name: "Bazzite",
+    description: "A atomic gaming  and workstation-focused distribution that relies on Terra for extra software availability.",
+    icon: "/distros/bazzite.svg",
+  },
+  {
+    name: "Nobara",
+    description: "A polished Fedora-based distro developed by Thomas Crider and uses terra to make gaming software easier to install",
+    icon: "/distros/nobara.svg",
+  },
+  {
+    name: "RakuOS",
+    description: "A community-driven atomic Linux experience that integrates Terra for additional package support.",
+    icon: "/distros/rakuos-logo.png",
+  },
+  {
+    name: "Zirconium",
+    description: "A newer atomic niri-based Fedora-based project that uses Terra to extend its available software catalogue.",
+    icon: "/distros/z.svg",
+  },
+];
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<section class="mx-auto w-full max-w-6xl px-6 pb-16">
+  <div class="mb-8 max-w-3xl">
+    <h2 class="text-3xl font-semibold tracking-tight">{title}</h2>
+    <p class="mt-2 text-sm text-muted-foreground md:text-base">{description}</p>
+  </div>
+
+  <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+    {distros.map((distro) => (
+      <article class="rounded-xl border bg-card/80 p-6 shadow-sm">
+        <div class="flex items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <img src={distro.icon} alt={distro.name} class="h-8 w-8" />
+            <h3 class="text-lg font-semibold">{distro.name}</h3>
+          </div>
+        </div>
+        <p class="mt-3 text-sm text-muted-foreground">{distro.description}</p>
+      </article>
+    ))}
+  </div>
+</section>
