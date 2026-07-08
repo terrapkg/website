@@ -91,8 +91,8 @@ importers:
         specifier: ^4.12.1
         version: 4.12.1(playwright-core@1.61.1)
       '@iconify/json':
-        specifier: ^2.2.493
-        version: 2.2.493
+        specifier: ^2.2.497
+        version: 2.2.497
       '@playwright/test':
         specifier: ^1.61.1
         version: 1.61.1
@@ -761,8 +761,8 @@ packages:
   '@floating-ui/utils@0.2.11':
     resolution: {integrity: sha512-RiB/yIh78pcIxl6lLMG0CgBXAZ2Y0eVHqMPYugu+9U0AeT6YBeiJpf7lbdJNIugFP5SIjwNRgo4DhR1Qxi26Gg==}
 
-  '@iconify/json@2.2.493':
-    resolution: {integrity: sha512-3fycKppFtbaiozIvBOMlaPnimWwq2nBVOjqzXKzTd3oTSOf8W+qfHvzbQLK92gtMfSV/m4GkLaJV/Upj6vACwA==}
+  '@iconify/json@2.2.497':
+    resolution: {integrity: sha512-pjrsxrbU5v2DLK44uMCPINVjMbrH4U6HV2ESvvzthLHZR1keQ6r6M3Gn3L7DFFRAxrepTd18AIixLTRIYvjD2A==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -4290,7 +4290,7 @@ snapshots:
 
   '@floating-ui/utils@0.2.11': {}
 
-  '@iconify/json@2.2.493':
+  '@iconify/json@2.2.497':
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 2.0.3
