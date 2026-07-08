@@ -35,7 +35,7 @@
     "secure": "Secure",
     "secure_desc": "Packages are built in a secure environment maintained by the Fyra Labs team. Through our modern tooling, transparent infrastructure, and careful review process, we can prevent issues from occurring.",
     "site_desc": "Terra is the community Fedora repository which makes it easy to install and maintain software packages.",
-    "supported_distros_title": "Linux Distributions Using Terra",
+    "supported_distros_title": "Distros Using Terra",
     "supported_distros_desc": "A growing list of Fedora-based communities and desktop distributions rely on Terra for a broader package ecosystem.",
     "UM_desc":"A Fedora-based distribution that uses Terra for a broader package selection and smoother upgrades.",
     "bazzite_desc":"A atomic gaming  and workstation-focused distribution that relies on Terra for extra software availability.",
