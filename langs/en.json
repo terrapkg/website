@@ -36,10 +36,5 @@
     "secure_desc": "Packages are built in a secure environment maintained by the Fyra Labs team. Through our modern tooling, transparent infrastructure, and careful review process, we can prevent issues from occurring.",
     "site_desc": "Terra is the community Fedora repository which makes it easy to install and maintain software packages.",
     "supported_distros_title": "Distros Using Terra",
-    "supported_distros_desc": "Terra brings delivers packages and core system components across the Fedora ecosystem.",
-    "UM_desc":"A Fedora-based distribution that uses Terra for a broader package selection and smoother upgrades.",
-    "bazzite_desc":"A atomic gaming-focused operating system that relies on Terra for system components like Mesa.",
-    "zirc_desc":"A newer atomic niri-based Fedora-based project that uses Terra to extend its available software catalogue.",
-    "nobara_desc":"A polished Fedora-based distro developed by Thomas Crider and uses terra to make gaming software easier to install",
-    "raku_desk":"A community-driven atomic Linux experience that integrates Terra for additional package support."
+    "supported_distros_desc": "Terra brings delivers packages and core system components across the Fedora ecosystem."
 }
