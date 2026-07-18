@@ -8,35 +8,29 @@ const t = makeT(Astro.params.lang);
 
 interface Distro {
   name: string;
-  description: string;
   icon: string;
 }
 
 const distros: Distro[] = [
   {
     name: "Ultramarine",
-    description: t("UM_desc"),
-    icon: "/distros/ultramarine-transp.svg",
+     icon: "/distros/ultramarine-transp.svg",
   },
   {
     name: "Bazzite",
-    description: t("bazzite_desc"),
     icon: "/distros/bazzite.svg",
   },
   {
     name: "Nobara",
-    description: t("nobara_desc"),
     icon: "/distros/nobara.svg",
   },
   {
     name: "RakuOS",
-    description: t("raku_desk"),
-    icon: "/distros/rakuos-logo.png",
+       icon: "/distros/rakuos-logo.png",
   },
   {
     name: "Zirconium",
-    description: t("zirc_desc"),
-    icon: "/distros/z.svg",
+       icon: "/distros/z.svg",
   },
 ];
 

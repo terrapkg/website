@@ -36,5 +36,5 @@
     "secure_desc": "Os pacotes são construídos em um ambiente seguro mantido pela equipe da Fyra Labs. Através de nossa ferramenta moderna, infraestrutura transparente e processo de revisão cuidadoso, podemos prevenir a ocorrência de problemas.",
     "site_desc": "O Terra é o repositório comunitário do Fedora que torna fácil instalar e manter pacotes de software.",
     "supported_distros_title": "Distribuições Linux que Usam o Terra",
-    "supported_distros_desc": "Uma lista crescente de comunidades baseadas no Fedora e distribuições desktop dependem do Terra para um ecossistema de pacotes mais amplo.",
+    "supported_distros_desc": "Uma lista crescente de comunidades baseadas no Fedora e distribuições desktop dependem do Terra para um ecossistema de pacotes mais amplo."
 }
