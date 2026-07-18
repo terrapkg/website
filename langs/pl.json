@@ -36,10 +36,5 @@
     "secure_desc": "Pakiety są kompilowane w bezpiecznym środowisku utrzymywanym przez zespół Fyra Labs. Dzięki naszym nowoczesnym narzędziom, przejrzystej infrastrukturze oraz starannemu procesowi weryfikacji jesteśmy w stanie zapobiegać pojawianiu się problemów.",
     "site_desc": "Terra to społecznościowe repozytorium Fedory, które ułatwia instalację i obsługę pakietów oprogramowania.",
     "supported_distros_title": "",
-    "supported_distros_desc": "",
-    "UM_desc":"",
-    "bazzite_desc":"",
-    "zirc_desc":"",
-    "nobara_desc":"",
-    "raku_desk":""
+    "supported_distros_desc": ""
 }
