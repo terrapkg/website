@@ -1,0 +1,22 @@
+{
+    "h1.the": "Les ",
+    "h1": " paquets que Fedora fournit pas.",
+    "desc": "Le dépôt communautaire qui manquait a Fedora, facile a uliliser et a contribuer.",
+    "contribute": "Contribuer",
+    "install": "Installer",
+    "install_terra": "Installer Terra",
+    "install_desc": "Copiez la commande suivante et collez-la dans votre terminal pour installer Terra. Faites attention avant d'exécuter des commande sur votre système. Aussi tant que vous y êtes, pourquoi pas mettre une étoile au projet ;3",
+    "star_on_github": "Mettre une étoile sur Github",
+    "copy": "Copier",
+    "copied": "Copié dans le presse-papiers !",
+    "docs": "Docs",
+    "sources": "Sources",
+    "community": "Comunauté",
+    "discord": "Discord",
+    "github": "GitHub",
+    "modern": "Moderne",
+    "modern_desc": "Terra repose sur la chaîne d'outils Andaman, notre méta-système de construction de paquets moderne écrit en Rust. Qui simplifie le processus de maintenance à grande échelle.",
+    "current": "Actuel",
+    "current_desc": "Vous en avez assez d'attendre les mises à jour ? Nous aussi. Les paquets sont mis à jour automatiquement dès leur publication en amont. Et pour ceux qui adorent les nouveautés, des paquets nightly sont également disponibles.",
+    "quality": "Qualité"
+}
