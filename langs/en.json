@@ -36,5 +36,5 @@
     "secure_desc": "Packages are built in a secure environment maintained by the Fyra Labs team. Through our modern tooling, transparent infrastructure, and careful review process, we can prevent issues from occurring.",
     "site_desc": "Terra is the community Fedora repository which makes it easy to install and maintain software packages.",
     "supported_distros_title": "Distros Using Terra",
-    "supported_distros_desc": "Terra brings delivers packages and core system components across the Fedora ecosystem."
+    "supported_distros_desc": "Terra delivers packages and core system components across the Fedora ecosystem."
 }
