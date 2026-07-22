@@ -109,8 +109,8 @@ importers:
         specifier: ^19.2.3
         version: 19.2.3(@types/react@19.2.17)
       baseline-browser-mapping:
-        specifier: ^2.10.43
-        version: 2.10.43
+        specifier: ^2.11.0
+        version: 2.11.0
       tw-animate-css:
         specifier: ^1.4.0
         version: 1.4.0
@@ -2070,8 +2070,8 @@ packages:
   bail@2.0.2:
     resolution: {integrity: sha512-0xO6mYd7JB2YesxDKplafRpsiOzPt9V02ddPCLbY1xYGPOX24NTyN50qnUxgCPcSoYMhKpAuBTjQoRZCAkUDRw==}
 
-  baseline-browser-mapping@2.10.43:
-    resolution: {integrity: sha512-AjYpR78kDWAY3Efj+cDTFH9t9SCoL7OoTp1BOb0mQV7S+6CiLwnWM3FyxhJtdPufDFKzmCSFoUncKjWgJEZTCQ==}
+  baseline-browser-mapping@2.11.0:
+    resolution: {integrity: sha512-oCu2wfipvX3AePSgmOuKkIywOu+8n9psz7hXYmk56ghpu3+7KzNIBopaOs4c9BrtdnTtW30unG9GTfHo7EwERQ==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -5786,13 +5786,13 @@ snapshots:
 
   bail@2.0.2: {}
 
-  baseline-browser-mapping@2.10.43: {}
+  baseline-browser-mapping@2.11.0: {}
 
   boolbase@1.0.0: {}
 
   browserslist@4.28.5:
     dependencies:
-      baseline-browser-mapping: 2.10.43
+      baseline-browser-mapping: 2.11.0
       caniuse-lite: 1.0.30001803
       electron-to-chromium: 1.5.389
       node-releases: 2.0.50
