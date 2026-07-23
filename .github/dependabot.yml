@@ -9,6 +9,8 @@ updates:
         patterns: ["astro", "@astrojs*"]
       canvas-confetti:
         patterns: ["canvas-confetti", "@types/canvas-confetti"]
+      icons:
+        patterns: ["@iconify*", "lucide-react", "unplugin-icons"]
       radix-ui:
         patterns: ["@radix-ui*"]
       react:
