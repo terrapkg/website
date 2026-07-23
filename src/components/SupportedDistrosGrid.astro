@@ -1,0 +1,64 @@
+---
+import { makeGetStaticPaths } from "astro-i18nya";
+import i18nya, { makeT } from "@/i18n";
+
+export const getStaticPaths = makeGetStaticPaths(i18nya);
+const t = makeT(Astro.params.lang);
+
+
+interface Distro {
+  name: string;
+  icon: string;
+}
+
+const distros: Distro[] = [
+  {
+    name: "Ultramarine",
+     icon: "/distros/ultramarine-transp.svg",
+  },
+  {
+    name: "Bazzite",
+    icon: "/distros/bazzite.svg",
+  },
+  {
+    name: "Nobara",
+    icon: "/distros/nobara.svg",
+  },
+  {
+    name: "RakuOS",
+       icon: "/distros/rakuos-logo.png",
+  },
+  {
+    name: "Zirconium",
+       icon: "/distros/z.svg",
+  },
+];
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+
+---
+
+<section class="mx-auto w-full max-w-6xl px-6 pb-16">
+  <div class="mb-8 max-w-3xl">
+    <h2 class="text-3xl font-semibold tracking-tight">{title}</h2>
+    <p class="mt-2 text-sm text-muted-foreground md:text-base">{description}</p>
+  </div>
+
+  <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+    {distros.map((distro) => (
+      <article class="rounded-xl border bg-card/80 p-6 shadow-sm">
+        <div class="flex items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <img src={distro.icon} alt={distro.name} class="h-8 w-8" />
+            <h3 class="text-lg font-semibold">{distro.name}</h3>
+          </div>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>
