@@ -52,7 +52,7 @@ const { title, description } = Astro.props;
   <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
     {distros.map((distro) => (
       <article class="rounded-xl border bg-card/80 p-6 shadow-sm">
-        <div class="flex items-center justify-between gap-3">
+        <div class="flex items-center justify-center gap-3">
           <div class="flex items-center gap-3">
             <img src={distro.icon} alt={distro.name} class="h-8 w-8" />
             <h3 class="text-lg font-semibold">{distro.name}</h3>
