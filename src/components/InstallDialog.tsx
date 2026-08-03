@@ -19,7 +19,7 @@ import { toast } from "sonner";
 import { makeT } from "@/i18n";
 
 const snippet =
-  "dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release";
+  "sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release";
 
 export const InstallDialog = ({ lang }: { lang?: string }) => {
   const t = makeT(lang);
