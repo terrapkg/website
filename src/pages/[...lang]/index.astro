@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/card";
 import { InstallDialog } from "@/components/InstallDialog";
 import { ButtonLink } from "@/components/ButtonLink";
+import SupportedDistrosGrid from "@/components/SupportedDistrosGrid.astro";
 import { makeGetStaticPaths } from "astro-i18nya";
 import i18nya, { makeT } from "@/i18n";
 
@@ -25,19 +26,19 @@ const t = makeT(Astro.params.lang);
 
 <MainLayout title="Terra" lang={Astro.params.lang}>
     <Navbar lang={Astro.params.lang} client:load />
-    <div class="flex flex-col gap-6 items-center p-16">
+    <div class="flex flex-col items-center gap-6 p-16">
         <h1
-            class="mx-auto text-center max-w-4xl text-4xl md:text-5xl lg:text-7xl font-bold"
+            class="mx-auto max-w-4xl text-center text-4xl font-bold md:text-5xl lg:text-7xl"
         >
             <!-- Do not use <Trans/> here, which requires experimentalReactChildren, which is incompatible with <NumberTicker/>. -->
             {t("h1.the")}<AuroraText className="-z-10" ><NumberTicker value={2000} startValue={1000} client:load />+</AuroraText>{t("h1")}
         </h1>
         <p
-            class="mx-auto max-w-4xl text-center md:text-xl text-muted-foreground"
+            class="mx-auto max-w-4xl text-center text-muted-foreground md:text-xl"
         >
             {t("desc")}
         </p>
-        <div class="grid grid-flow-col auto-cols-fr mt-4 gap-2">
+        <div class="mt-4 grid auto-cols-fr grid-flow-col gap-2">
             <InstallDialog lang={Astro.params.lang} client:load />
             <ButtonLink
                 href="https://docs.terrapkg.com/contributing/getting-started"
@@ -48,7 +49,7 @@ const t = makeT(Astro.params.lang);
         </div>
     </div>
 
-    <div class="grid gap-6 lg:grid-cols-3 container mx-auto p-6">
+    <div class="container mx-auto grid gap-6 p-6 lg:grid-cols-3">
         <Card>
             <CardHeader>
                 <CardTitle>{t("modern")}</CardTitle>
@@ -86,4 +87,8 @@ const t = makeT(Astro.params.lang);
             </CardHeader>
         </Card>
     </div>
+    <SupportedDistrosGrid
+        title={t("supported_distros_title")}
+        description={t("supported_distros_desc")}
+    />
 </MainLayout>
