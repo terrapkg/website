@@ -166,3 +166,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+* {
+  text-autospace: normal;
+}
