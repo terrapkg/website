@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
-    "@axe-core/playwright": "^4.12.1",
+    "@axe-core/playwright": "^4.13.0",
     "@iconify/json": "^2.2.516",
     "@playwright/test": "^1.62.1",
     "@types/canvas-confetti": "^1.9.0",
