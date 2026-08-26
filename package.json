@@ -25,7 +25,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "i18nya": "^0.2.6",
-    "lucide-react": "^1.31.0",
+    "lucide-react": "^1.33.0",
     "motion": "^13.1.1",
     "next-themes": "^0.4.6",
     "react": "^19.2.8",
@@ -39,7 +39,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "@axe-core/playwright": "^4.13.0",
-    "@iconify/json": "^2.2.516",
+    "@iconify/json": "^2.2.519",
     "@playwright/test": "^1.62.1",
     "@types/canvas-confetti": "^1.9.0",
     "@types/node": "^26.2.0",
