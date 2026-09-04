@@ -34,5 +34,7 @@
     "ease_of_use_desc": "Korzystanie z Terra jest równie proste, jak z każdego innego repozytorium. Dla programistów praca z Terra to czysta przyjemność. Współpracujemy bezpośrednio z innymi projektami, aby sprostać ich potrzebom i sprawić, by korzystanie z Terra przebiegało jak najpłynniej.",
     "secure": "Bezpieczeństwo",
     "secure_desc": "Pakiety są kompilowane w bezpiecznym środowisku utrzymywanym przez zespół Fyra Labs. Dzięki naszym nowoczesnym narzędziom, przejrzystej infrastrukturze oraz starannemu procesowi weryfikacji jesteśmy w stanie zapobiegać pojawianiu się problemów.",
-    "site_desc": "Terra to społecznościowe repozytorium Fedory, które ułatwia instalację i obsługę pakietów oprogramowania."
+    "site_desc": "Terra to społecznościowe repozytorium Fedory, które ułatwia instalację i obsługę pakietów oprogramowania.",
+    "supported_distros_title": "",
+    "supported_distros_desc": ""
 }
