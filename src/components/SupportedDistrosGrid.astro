@@ -5,32 +5,37 @@ import i18nya, { makeT } from "@/i18n";
 export const getStaticPaths = makeGetStaticPaths(i18nya);
 const t = makeT(Astro.params.lang);
 
-
 interface Distro {
   name: string;
   icon: string;
+  url:  string;
 }
 
 const distros: Distro[] = [
   {
     name: "Ultramarine",
-     icon: "/distros/ultramarine-transp.svg",
+    icon: "/distros/ultramarine-transp.svg",
+    url:  "https://ultramarine-linux.org/"
   },
   {
     name: "Bazzite",
     icon: "/distros/bazzite.svg",
+    url:  "https://bazzite.gg/"
   },
   {
     name: "Nobara",
     icon: "/distros/nobara.svg",
+    url:  "https://nobaraproject.org/"
   },
   {
     name: "RakuOS",
-       icon: "/distros/rakuos-logo.svg",
+    icon: "/distros/rakuos-logo.svg",
+    url:  "https://rakuos.org/"
   },
   {
     name: "Zirconium",
-       icon: "/distros/z.svg",
+    icon: "/distros/z.svg",
+    url:  "https://github.com/zirconium-dev/zirconium"
   },
 ];
 
@@ -40,7 +45,6 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
-
 ---
 
 <section class="mx-auto w-full max-w-6xl px-6 pb-16">
@@ -51,14 +55,13 @@ const { title, description } = Astro.props;
 
   <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
     {distros.map((distro) => (
-      <article class="rounded-xl border bg-card/80 p-6 shadow-sm">
-        <div class="flex items-center justify-center gap-3">
-          <div class="flex items-center gap-3">
-            <img src={distro.icon} alt={distro.name} class="h-8 w-8" />
-            <h3 class="text-lg font-semibold">{distro.name}</h3>
-          </div>
-        </div>
+      <article class="rounded-xl border bg-card/80 p-6 shadow-sm transition hover:bg-card/100">
+        <a href={distro.url} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 w-full">
+          <img src={distro.icon} alt={distro.name} class="h-8 w-8" />
+          <h3 class="text-lg font-semibold">{distro.name}</h3>
+        </a>
       </article>
     ))}
   </div>
 </section>
+
