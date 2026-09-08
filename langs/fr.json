@@ -34,5 +34,7 @@
     "ease_of_use_desc": "Terra est aussi simple d'utilisation que tout autre dépôt. Pour les développeur·ses, utiliser Terra est simple comme bonjour. Nous travaillons en direct avec d'autres projets pour répondre à leurs besoins et rendre Terra aussi agréable que possible.",
     "secure": "Sécurisé",
     "secure_desc": "Les paquets sont construits dans un environnement sécurisé maintenu par l'équipe Fyra Labs. Grâce à nos outils à la pointe, une infrastructure transparente et notre processus d'examen scrupuleux, nous avons tout le nécessaire pour anticiper les problèmes.",
-    "site_desc": "Terra est le dépôt Fedora communautaire qui simplifie l'installation et la maintenance de paquets logiciels."
+    "site_desc": "Terra est le dépôt Fedora communautaire qui simplifie l'installation et la maintenance de paquets logiciels.",
+    "supported_distros_title": "Distributions utilisant Terra",
+    "supported_distros_desc": "Terra fournit des paquets et des composants système essentiels à travers l'entièreté de l'écosystème Fedora."
 }
