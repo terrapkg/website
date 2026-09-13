@@ -26,4 +26,13 @@ export default defineConfig({
   },
 
   integrations: [sitemap(), react(), astro_i18nya(i18nya)],
+
+  redirects: {
+    "/github": "https://github.com/terrapkg",
+    "/packages": "https://github.com/terrapkg/packages",
+    "/builder": "https://github.com/terrapkg/builder",
+    "/docs": "https://docs.terrapkg.com",
+    "/mock-configs": "https://github.com/terrapkg/mock-configs",
+    "/srpm-macros": "https://github.com/terrapkg/srpm-macros"
+  },
 });
