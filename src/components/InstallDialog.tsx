@@ -16,6 +16,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { toast } from "sonner";
+import { Star } from "lucide-react";
 import { makeT } from "@/i18n";
 import Heart from "~icons/bi/heart-fill";
 import KoFi from "~icons/simple-icons/kofi";
@@ -75,23 +76,33 @@ export const InstallDialog = ({ lang }: { lang?: string }) => {
           </pre>
         </div>
 
-        <DialogFooter>
-          <div
-            class="flex flex-col md:flex-row gap-2 md:gap-4 md:items-center z-10 mt-6"
-          >
+        <DialogFooter className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-wrap items-center gap-2 md:gap-4 z-10 min-w-0">
             <a
-              className="flex flex-row gap-2 items-center justify-center px-3 md:px-6 py-2 from-pink-500 to-pink-600 bg-linear-to-br rounded-xl text-gray-50 hover:bg-pink-600 transition-colors w-full md:w-auto text-sm md:text-base relative group"
+              className="inline-flex h-9 items-center justify-center gap-2 rounded-md bg-gradient-to-br from-pink-500 to-pink-600 px-4 py-2 text-sm font-medium text-gray-50 transition-colors hover:bg-pink-600 relative group shrink-0"
               href="https://github.com/sponsors/FyraLabs"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Heart
-                className="heartbeat absolute -right-1 -top-1 text-pink-300 group-hover:animate-[heartbeat_0.4s_cubic-bezier(0,0,0.2,1)_infinite_alternate]"
+                className="text-pink-300 group-hover:animate-[heartbeat_0.4s_cubic-bezier(0,0,0.2,1)_infinite_alternate]"
+                style={{
+                  width: "1.2em",
+                  height: "1.2em",
+                  display: "block",
+                  position: "absolute",
+                  top: "calc(var(--spacing) * -1)",
+                  right: "calc(var(--spacing) * -1)",
+                  color: "var(--color-pink-300)",
+                  transition: "transform 0.4s cubic-bezier(0,0,0.2,1)",
+                  rotate: "30deg",
+                  transformOrigin: "center",
+                }}
               />
               <span>{t("github_sponsors")}</span>
             </a>
-            <div className="w-0.5 h-full bg-gray-800"></div>
-            <div className="flex flex-row gap-4">
+            <div className="h-8 w-px bg-gray-700 hidden sm:block" />
+            <div className="flex flex-row items-center gap-3 sm:gap-4">
               <a
                 className="hover:text-red-400 transition-colors"
                 href="https://ko-fi.com/fyralabs"
@@ -115,23 +126,27 @@ export const InstallDialog = ({ lang }: { lang?: string }) => {
             </div>
           </div>
 
-          <Button variant="link">
+          <div className="flex items-center gap-2 ml-auto sm:ml-0">
             <a
               href="https://github.com/terrapkg/packages"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Star on GitHub"
+              title="Star on GitHub"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-yellow-500/40 bg-yellow-400/10 text-yellow-400 transition-colors hover:bg-yellow-400/20 hover:text-yellow-300"
             >
-              {t("star_on_github")}
+              <Star className="size-4 fill-current" />
+              <span className="sr-only">Star on GitHub</span>
             </a>
-          </Button>
-          <Button
-            onClick={async () => {
-              await navigator.clipboard.writeText(snippet);
-              toast.success(t("copied"));
-            }}
-          >
-            {t("copy")}
-          </Button>
+            <Button
+              onClick={async () => {
+                await navigator.clipboard.writeText(snippet);
+                toast.success(t("copied"));
+              }}
+            >
+              {t("copy")}
+            </Button>
+          </div>
         </DialogFooter>
       </DialogContent>
     </Dialog>
