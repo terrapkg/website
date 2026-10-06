@@ -135,7 +135,7 @@ export const InstallDialog = ({ lang }: { lang?: string }) => {
               rel="noopener noreferrer"
             >
               <KoFi className="size-5" />
-              <span className="sr-only">{t("community.kofi")}</span>
+              <span className="sr-only">{t("kofi")}</span>
             </a>
             <a
               className="inline-flex h-9 w-10 items-center justify-center rounded-r-md border border-border bg-card text-card-foreground transition-colors hover:bg-accent hover:text-[#f6c915]"
@@ -146,7 +146,7 @@ export const InstallDialog = ({ lang }: { lang?: string }) => {
               rel="noopener noreferrer"
             >
               <Liberapay className="size-5" />
-              <span className="sr-only">{t("community.liberapay")}</span>
+              <span className="sr-only">{t("liberapay")}</span>
             </a>
           </div>
             <StarLink label={t("star_on_github")} className="w-9 rounded-md px-0 sm:hidden" />
