@@ -17,6 +17,10 @@ import {
 } from "@/components/ui/select";
 import { toast } from "sonner";
 import { makeT } from "@/i18n";
+import Heart from "~icons/bi/heart-fill";
+import KoFi from "~icons/simple-icons/kofi";
+import Liberapay from "~icons/simple-icons/liberapay";
+
 
 const snippet =
   "sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release";
@@ -72,6 +76,45 @@ export const InstallDialog = ({ lang }: { lang?: string }) => {
         </div>
 
         <DialogFooter>
+          <div
+            class="flex flex-col md:flex-row gap-2 md:gap-4 md:items-center z-10 mt-6"
+          >
+            <a
+              className="flex flex-row gap-2 items-center justify-center px-3 md:px-6 py-2 from-pink-500 to-pink-600 bg-linear-to-br rounded-xl text-gray-50 hover:bg-pink-600 transition-colors w-full md:w-auto text-sm md:text-base relative group"
+              href="https://github.com/sponsors/FyraLabs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Heart
+                className="heartbeat absolute -right-1 -top-1 text-pink-300 group-hover:animate-[heartbeat_0.4s_cubic-bezier(0,0,0.2,1)_infinite_alternate]"
+              />
+              <span>{t("github_sponsors")}</span>
+            </a>
+            <div className="w-0.5 h-full bg-gray-800"></div>
+            <div className="flex flex-row gap-4">
+              <a
+                className="hover:text-red-400 transition-colors"
+                href="https://ko-fi.com/fyralabs"
+                aria-label="Ko-fi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <KoFi className="size-6" />
+                <span className="sr-only">{t("community.kofi")}</span>
+              </a>
+              <a
+                className="hover:text-[#f6c915] transition-colors"
+                href="https://liberapay.com/fyra/"
+                aria-label="Liberapay"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Liberapay className="size-6" />
+                <span className="sr-only">{t("community.liberapay")}</span>
+              </a>
+            </div>
+          </div>
+
           <Button variant="link">
             <a
               href="https://github.com/terrapkg/packages"

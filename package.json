@@ -41,6 +41,7 @@
     "@astrojs/check": "^0.9.10",
     "@axe-core/playwright": "^4.13.0",
     "@iconify/json": "^2.2.530",
+    "@iconify-json/simple-icons": "^1.2.86",
     "@playwright/test": "^1.63.0",
     "@types/canvas-confetti": "^1.9.0",
     "@types/node": "^26.6.2",
