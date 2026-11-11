@@ -54,8 +54,8 @@ importers:
         specifier: ^0.2.6
         version: 0.2.6
       lucide-react:
-        specifier: ^1.67.0
-        version: 1.67.0(@types/react@19.3.0)(react@19.3.1)
+        specifier: ^1.70.0
+        version: 1.70.0(@types/react@19.3.0)(react@19.3.1)
       motion:
         specifier: ^14.10.1
         version: 14.10.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
@@ -94,8 +94,8 @@ importers:
         specifier: ^1.2.101
         version: 1.2.101
       '@iconify/json':
-        specifier: ^2.2.553
-        version: 2.2.553
+        specifier: ^2.2.554
+        version: 2.2.554
       '@playwright/test':
         specifier: ^1.64.1
         version: 1.64.1
@@ -842,8 +842,8 @@ packages:
   '@iconify-json/simple-icons@1.2.101':
     resolution: {integrity: sha512-MXJkMZDancJ/9I+Bgdthi9kXvn3AwWStxoTHwEPwAFQ9kMLBASO1BSstg52fNtjXeizm1Wi91R+QnWxNGkWHPQ==}
 
-  '@iconify/json@2.2.553':
-    resolution: {integrity: sha512-wJiXvMppZufZiRtHNnvL/BfIQONajWDEbTmBPqWMFX2HSOLj54FGmhmp5M56ErYfyS39s9RKS1PhQOBiBy+L4w==}
+  '@iconify/json@2.2.554':
+    resolution: {integrity: sha512-HAiIOhC5LT1zCT3OXASrkISRGaWAECply3G8vFn6IycY3mUIDLlUXOI4JU7CBzQpr++yuM53aUyz9xjs/1WjiA==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -2883,8 +2883,8 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  lucide-react@1.67.0:
-    resolution: {integrity: sha512-z7kd21YNm/Gw3E7mTnq5dTuvV+yc+OEwA//oDENSG1SbZ/NVgKdjxALJFNdGoC0Ji7HaJR2Dha9ev7VUPxy9CQ==}
+  lucide-react@1.70.0:
+    resolution: {integrity: sha512-gCTPPN1MlQUBtUgdsUv+0CAUj+X8hifRUiRBw4E5v7lvDIOIpx0EZezdGQMSimS8pKA6esvullJub4GYr0mCHA==}
     peerDependencies:
       '@types/react': '*'
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -4714,7 +4714,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify/json@2.2.553':
+  '@iconify/json@2.2.554':
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 2.0.3
@@ -6661,7 +6661,7 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-react@1.67.0(@types/react@19.3.0)(react@19.3.1):
+  lucide-react@1.70.0(@types/react@19.3.0)(react@19.3.1):
     dependencies:
       react: 19.3.1
     optionalDependencies:
