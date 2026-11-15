@@ -1,1 +1,13 @@
-{}
+{
+    "h1.the": "Os ",
+    "h1": " pacotes que o Fedora não inclui.",
+    "desc": "O repositório comunitário em falta no Fedora, que é fácil de utilizar e ao qual é fácil de contribuir.",
+    "contribute": "Contribuir",
+    "install": "Instalar",
+    "install_terra": "Instalar Terra",
+    "install_desc": "Copia o seguinte comando e cola-o no teu terminal para instalar o Terra. Tem cuidado antes de rodar quaisquer comandos no teu sistema. E já que estás a fazer isso, porquê não dar uma estrela ao projeto ;3",
+    "star_on_github": "Marcar com estrela no GitHub",
+    "copy": "Copiar",
+    "copied": "Copiado para a área de transferência!",
+    "docs": "Documentação"
+}
