@@ -42,7 +42,7 @@
     "@axe-core/playwright": "^4.14.0",
     "@iconify-json/simple-icons": "^1.2.102",
     "@iconify/json": "^2.2.555",
-    "@playwright/test": "^1.65.0",
+    "@playwright/test": "^1.65.1",
     "@types/canvas-confetti": "^1.9.0",
     "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
