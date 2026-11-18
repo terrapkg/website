@@ -1,0 +1,3 @@
+[files]
+# translations arent supported by typos workflow, add back english lang
+extend-exclude = ["pnpm-lock.yaml", "langs/*.json", "!langs/en.json"]
