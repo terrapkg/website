@@ -36,6 +36,6 @@
     "liberapay": "Liberapay",
     "github_sponsors": "GitHub贊助",
     "sponsors": "贊助",
-    "supported_distros_title": "",
-    "supported_distros_desc": ""
+    "supported_distros_title": "採用Terra的發行版",
+    "supported_distros_desc": "Terra為整個Fedora生態系統提供軟體包與核心系統組件。"
 }
